@@ -1,4 +1,5 @@
 
+
 ### Day 1
 - Chapter 1 - [Values, Types, and Operators](https://eloquentjavascript.net/01_values.html)
 - Chapter 2 - [Program Structure](https://eloquentjavascript.net/02_program_structure.html)

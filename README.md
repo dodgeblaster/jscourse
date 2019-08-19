@@ -6,7 +6,15 @@ This is an introduction course to javascript.
 
 
 ### Aims of the course
-- Student knows how to use variables, statements, expressions, loops, functions, and objects.
+- Students will understand the following features of the javascript language:
+  - expressions
+  - statements
+  - variables
+  - loops
+  - functions
+  - objects
+  - higher order functions
+  - closures
 - Student knows the difference between ES5 and ES6
 - Student can organize javascript code into functions and modules
 - Student can make an html page interactive with javascript

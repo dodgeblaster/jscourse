@@ -59,8 +59,8 @@ It used to build:
 
 Discuss what 'falsy' means in js, and why its important to have a good understanding of it
 
-### Variables
-- why variables are good
+### Giving things names (Variables)
+- why variables are good (giving data and procedures names is important, you are identifying intention)
 - comparing variables and expressions (are they the same?) - mention You Don't Know HS for more details
 
 ### Statements - If statements

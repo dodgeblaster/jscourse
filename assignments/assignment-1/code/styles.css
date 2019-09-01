@@ -1,0 +1,104 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+GENERAL 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 900px;
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+NAV 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+nav {
+    border-bottom: 1px solid #ededed;
+}
+
+nav .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+nav .container ul li {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.logo {
+    background: url('./img/logo.svg');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    nav .container {
+        padding: 0 30px;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+}
+
+
+
+
+/* TILES */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 280px;
+    border-radius: 10px;
+    background: rgba(23,35, 50, 1);
+    flex: 1 230px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 8px 9px 0px rgba(0, 0, 0, 0.14), 11px 11px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card .buy-button {
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card .topic {
+     color: white;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+.card .title {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+

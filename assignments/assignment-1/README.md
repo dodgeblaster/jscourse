@@ -1,4 +1,4 @@
-# Assignment #1
+# Assignment #1 - Adding Tiles
 
 In this assignment, we are going to take an array of data and turn that into tiles on the index page.
 

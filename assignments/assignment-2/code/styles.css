@@ -1,0 +1,104 @@
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #0f161c;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 502px;
+    width: 1001px;
+    display: flex;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.today-container {
+    flex: 40%;
+    display: flex;
+    height: 502px;
+    background: #222e3e;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.today-stage {
+    position: relative;
+    height: 200px;
+    width: 260px;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+
+.today-icon {
+    font-size: 140px;
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    opacity: 0.17;
+}
+
+.today-temp {
+    font-weight: 900;
+    font-size: 64px;
+    left: 0;
+    top: 64px;
+    position: absolute;
+}
+
+.today-description {
+    font-weight: 400;
+    font-size: 18px;
+    left: 0;
+    top: 143px;
+    position: absolute;
+}
+
+.today-minmax {
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.4;
+    left: 0;
+    top: 170px;
+    position: absolute;
+}
+
+.week-container {
+    flex: 60%;
+    height: 502px;
+    background: #172332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.week-stage {
+    height: 80px;
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-day-container {
+    height: 80px;
+    width: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week-day-container p {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.week-day-container span {
+    opacity: 0.17;
+    font-size: 24px;
+    margin: 0;
+}

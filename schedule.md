@@ -9,15 +9,15 @@
 ##### Afternoon Assignment Ideas
 - Chessboard from book
 - FIZZBIZZ
-- Madlibs
 
 ### Day 2 - Functions
-
+##### Morning Topics
 - Chapter 3 - [Functions](https://eloquentjavascript.net/03_functions.html)
 - Chapter 4 - [Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html)
 - Chapter 5 - [Higher-order Functions](https://eloquentjavascript.net/05_higher_order.html)
 - You Don't Know JS - [Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/README.md)
-
+##### Afternoon Assignment Ideas
+- what can we do without access to the DOM? maybe a calculater that i pre hook up to buttons?
 
 ### Day 3 - The DOM
 ##### Morning Topics
@@ -44,16 +44,21 @@
   - Validate input from survey
   
 ##### Afternoon Assignment Ideas
+- more simple DOM manipulation examples
 - Assignment #1 - add tiles to page
 
 ### Day 5 - API
 ##### Morning Topics
 - Chapter 10 - [Modules](https://eloquentjavascript.net/10_modules.html)
+  - maybe leave this for day 6
 - Chapter 11 - [Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
-- You Don't Know JS - [Async and Performance](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/async-performance/README.md)
+  - with set time outs, so something with promises
 - Chapter 18 - [HTTP and Forms](https://eloquentjavascript.net/18_http.html)
+  - have html and css for form for them, they have to fill it out, press send, and have it validate inputs,
+    return with the sent result in an output box somewhere
+ - You Don't Know JS - [Async and Performance](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/async-performance/README.md)
 ##### Afternoon Assignment Ideas
-- Star wars API
+- Star wars API (that might happen in the morning)
 - Assignment #2 - weather app
 
 ### Day 6 - Modern JS Development

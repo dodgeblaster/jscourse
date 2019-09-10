@@ -17,7 +17,8 @@
 - Chapter 5 - [Higher-order Functions](https://eloquentjavascript.net/05_higher_order.html)
 - You Don't Know JS - [Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/README.md)
 ##### Afternoon Assignment Ideas
-- what can we do without access to the DOM? maybe a calculater that i pre hook up to buttons?
+- go over array methods like forEach, map, filter, reduce
+- change data from 1 type to another thry array methods
 
 ### Day 3 - The DOM
 ##### Morning Topics

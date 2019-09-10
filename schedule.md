@@ -29,7 +29,6 @@
 
 ### Day 5 - API
 - Chapter 10 - [Modules](https://eloquentjavascript.net/10_modules.html)
-
 - Chapter 11 - [Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
 - You Don't Know JS - [Async and Performance](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/async-performance/README.md)
 - Chapter 18 - [HTTP and Forms](https://eloquentjavascript.net/18_http.html)

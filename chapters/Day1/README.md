@@ -21,14 +21,15 @@ And how to doing similar tasks repeatedly, using:
 -   loops
 
 ## Schedule
-|Time   |Name   |
-|---|---|
-| 8:00 - 9:30  | 01 Intro  |
-| 9:30 - 9:45   |  Break  |
-| 9:45 - 10:30   |  02 Values, Types, and Operators |
-| 10:30 - 10:45 | Break |
-| 10:45 - 11:30 | 03 Program Structure |
-| 11:30 - 12:30 | Lunch |
-| 12:30 - 1:30 | Accomplish our goal of making a survey |
-| 1:30 - 1:45 | Break |
-| 1:45 - 3:00 | Reading and exercises |
+
+| Time          | Name                                   |
+| ------------- | -------------------------------------- |
+| 8:00 - 9:30   | 01 Intro                               |
+| 9:30 - 9:45   | Break                                  |
+| 9:45 - 10:30  | 02 Values, Types, and Operators        |
+| 10:30 - 10:45 | Break                                  |
+| 10:45 - 11:30 | 03 Program Structure                   |
+| 11:30 - 12:30 | Lunch                                  |
+| 12:30 - 1:30  | Accomplish our goal of making a survey |
+| 1:30 - 1:45   | Break                                  |
+| 1:45 - 3:00   | Reading and exercises                  |

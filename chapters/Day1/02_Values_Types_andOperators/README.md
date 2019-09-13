@@ -51,9 +51,10 @@ sorting hat. How it works:
 -   after two questions have been asked, console.log the house they belong to
 
 For those who have never read Harry Potter, here is the answer key:
-| House | Color | Animal |
-| ----- | ----- | ------ |
-| Griffendor | Red | Lion |
-| Ravenclaw | Blue | Raven |
+
+| House      | Color  | Animal |
+| ---------- | ------ | ------ |
+| Griffendor | Red    | Lion   |
+| Ravenclaw  | Blue   | Raven  |
 | Hufflepuff | Yellow | Badger |
-| Slytherin | Green | Snake |
+| Slytherin  | Green  | Snake  |

@@ -2,7 +2,7 @@
 
 ## Goals
 
-We want to make a website interactable with javascript
+Today, our goal is (do something with js and css classes (animations))
 
 ## Technical things we need to learn to accomplish are goal
 
@@ -20,14 +20,14 @@ And how to receive input or events from it, using:
 
 ## Schedule
 
-| Time          | Name                                                 |
-| ------------- | ---------------------------------------------------- |
-| 8:00 - 9:30   | 01 The Browser                                       |
-| 9:30 - 9:45   | Break                                                |
-| 9:45 - 10:30  | 02 The DOM                                           |
-| 10:30 - 10:45 | Break                                                |
-| 10:45 - 11:30 | 03 Handling Events                                   |
-| 11:30 - 12:30 | Lunch                                                |
-| 12:30 - 1:30  | Accomplish our goal of making a website interactable |
-| 1:30 - 1:45   | Break                                                |
-| 1:45 - 3:00   | Reading and exercises                                |
+| Time          | Name                      |
+| ------------- | ------------------------- |
+| 8:00 - 9:30   | 01 The Browser            |
+| 9:30 - 9:45   | Break                     |
+| 9:45 - 10:30  | 02 The DOM                |
+| 10:30 - 10:45 | Break                     |
+| 10:45 - 11:30 | 03 Handling Events        |
+| 11:30 - 12:30 | Lunch                     |
+| 12:30 - 1:30  | Accomplish our goal       |
+| 1:30 - 1:45   | Break                     |
+| 1:45 - 3:00   | Reading and Assignment #1 |

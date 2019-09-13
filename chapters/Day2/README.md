@@ -2,7 +2,7 @@
 
 ## Goals
 
-We want to make a searchable movie database
+Today, our goal is to make a site that can search for movies from a list of movies
 
 ## Technical things we need to learn to accomplish are goal
 

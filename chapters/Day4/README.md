@@ -2,32 +2,34 @@
 
 ## Goals
 
-Not sure yet
+Today, our goal is build a starwars encyclopedia
 
 ## Technical things we need to learn to accomplish are goal
 
-In order to do that, we will need to learn more about objects:
+In order to do that, we will need to learn how to interact with databases, using:
 
--   The Secret List of Objects
+-   AJAX
+-   fetch
 
-We need to know how to deal with errors when they happen, using:
+We need to know understand how to work with requests that have an unknown return time, using:
 
--   Error Handling
+-   Callbacks
+-   Promises
 
-And how to valid things in order to avoid errors as much as possible, using:
+And how to send and receive HTTP traffic using:
 
--   Regular Expressions
+-   JSON
 
 ## Schedule
 
-| Time          | Name                                             |
-| ------------- | ------------------------------------------------ |
-| 8:00 - 9:30   | 01 Objects                                       |
-| 9:30 - 9:45   | Break                                            |
-| 9:45 - 10:30  | 02 Error Handling                                |
-| 10:30 - 10:45 | Break                                            |
-| 10:45 - 11:30 | 03 Regex                                         |
-| 11:30 - 12:30 | Lunch                                            |
-| 12:30 - 1:30  | Accomplish our goal of... (probably assignments) |
-| 1:30 - 1:45   | Break                                            |
-| 1:45 - 3:00   | Reading and exercises                            |
+| Time          | Name                                                  |
+| ------------- | ----------------------------------------------------- |
+| 8:00 - 9:30   | 01 Async Programming                                  |
+| 9:30 - 9:45   | Break                                                 |
+| 9:45 - 10:30  | 01 Async Programming                                  |
+| 10:30 - 10:45 | Break                                                 |
+| 10:45 - 11:30 | 02 HTTP and Forms                                     |
+| 11:30 - 12:30 | Lunch                                                 |
+| 12:30 - 1:30  | Accomplish our goal of making a starwars encyclopedia |
+| 1:30 - 1:45   | Break                                                 |
+| 1:45 - 3:00   | Reading and Assignment #2                             |

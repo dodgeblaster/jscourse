@@ -2,7 +2,7 @@
 
 ## Goals
 
-Create a Pesonality Test
+Today, our goal is to create a personality test
 
 ## Technical things we need to learn to accomplish are goal
 

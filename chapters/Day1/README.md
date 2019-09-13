@@ -1,10 +1,10 @@
 # Day 1
 
-## What - Goals
+## Goals
 
 We want to make a survey
 
-## How - Technical things we need to learn to accomplish are goal
+## Technical things we need to learn to accomplish are goal
 
 In order to do that, we will need to learn some of the basics of Javascript:
 
@@ -20,11 +20,7 @@ And how to doing similar tasks repeatedly, using:
 
 -   loops
 
-## Why
-
-...
-
-## When - Schedule
+## Schedule
 
 | Time          | Name                                   |
 | ------------- | -------------------------------------- |
@@ -37,11 +33,3 @@ And how to doing similar tasks repeatedly, using:
 | 12:30 - 1:30  | Accomplish our goal of making a survey |
 | 1:30 - 1:45   | Break                                  |
 | 1:45 - 3:00   | Reading and exercises                  |
-
-## Who
-
-the class
-
-## Where
-
-the classroom

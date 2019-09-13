@@ -52,5 +52,5 @@
 
 ## Chapter Exercises (In Class Work)
 
--   fizzbizz
--   chessboard
+-   fizzbizz (from book)
+-   chessboard (from book)

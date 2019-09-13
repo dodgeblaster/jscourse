@@ -2,7 +2,7 @@
 
 ## Goals
 
-We want to make a survey
+Create a Pesonality Test
 
 ## Technical things we need to learn to accomplish are goal
 
@@ -12,7 +12,7 @@ In order to do that, we will need to learn some of the basics of Javascript:
 -   types
 -   operators
 
-And how to create decision making in our code using:
+And how to make decisions in our code using:
 
 -   if statements
 

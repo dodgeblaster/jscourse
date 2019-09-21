@@ -10,8 +10,6 @@ Gulp is a general task runner. Its great for transforming files, running bash sc
 Webpack is a dedicated solution for transforming Javascript files. Infact, it is not uncommon to see projects that have gulp as
 a task runner, and as one of its tasks, runs a webpack process that will transform your js.
 
-So basically, webpack is a
-
 #### Links
 
 -   [Webpack site](https://webpack.js.org)

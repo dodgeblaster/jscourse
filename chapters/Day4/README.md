@@ -22,14 +22,14 @@ And how to send and receive HTTP traffic using:
 
 ## Schedule
 
-| Time          | Name                                                  |
-| ------------- | ----------------------------------------------------- |
-| 8:00 - 9:30   | 01 Async Programming                                  |
-| 9:30 - 9:45   | Break                                                 |
-| 9:45 - 10:30  | 01 Async Programming                                  |
-| 10:30 - 10:45 | Break                                                 |
-| 10:45 - 11:30 | 02 HTTP and Forms                                     |
-| 11:30 - 12:30 | Lunch                                                 |
-| 12:30 - 1:30  | Accomplish our goal of making a starwars encyclopedia |
-| 1:30 - 1:45   | Break                                                 |
-| 1:45 - 3:00   | Reading and Assignment #2                             |
+| Time          | Name                        |
+| ------------- | --------------------------- |
+| 8:00 - 9:30   | 01 Async Programming        |
+| 9:30 - 9:45   | Break                       |
+| 9:45 - 10:30  | 01 Async Programming        |
+| 10:30 - 10:45 | Break                       |
+| 10:45 - 11:30 | 02 HTTP and Forms           |
+| 11:30 - 12:30 | Lunch                       |
+| 12:30 - 1:30  | Build starwars encyclopedia |
+| 1:30 - 1:45   | Break                       |
+| 1:45 - 3:00   | Assignment #2               |

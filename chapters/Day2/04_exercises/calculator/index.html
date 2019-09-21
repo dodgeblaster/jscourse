@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+
+        <style>
+            .page {
+                background: #e3e3e3;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container {
+                width: 200px;
+                background: #567;
+            }
+
+            #screen {
+                height: 100px;
+                width: 100%;
+                background: #334;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            button {
+                flex: 1;
+                border: 1px solid black;
+                background: #345;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+            }
+        </style>
+    </head>
+
+    <body class="page">
+        <div class="container">
+            <div id="screen"></div>
+            <div class="row">
+                <button id="b7">7</button>
+                <button id="b8">8</button>
+                <button id="b9">9</button>
+            </div>
+
+            <div class="row">
+                <button id="b4">4</button>
+                <button id="b5">5</button>
+                <button id="b6">6</button>
+            </div>
+
+            <div class="row">
+                <button id="b1">1</button>
+                <button id="b2">2</button>
+                <button id="b3">3</button>
+            </div>
+
+            <div class="row">
+                <button id="b0">0</button>
+                <button id="add">+</button>
+                <button id="minus">-</button>
+            </div>
+
+            <div class="row">
+                <button id="equals">=</button>
+                <button id="remove">remove</button>
+                <button id="clear">clear</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        // Helper functions for connecting to the DOM
+        const on = (el, f) =>
+            document.getElementById(el).addEventListener('click', f)
+
+        const updateScreen = x =>
+            (document.getElementById('screen').innerHTML = x)
+
+        // Your code here...
+    </script>
+</html>

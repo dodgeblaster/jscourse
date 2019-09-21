@@ -27,11 +27,11 @@ And how to doing similar tasks repeatedly, using:
 | 8:00 - 9:30   | 01 Intro                        |
 | 9:30 - 9:45   | Break                           |
 | 9:45 - 10:30  | 02 Values, Types, and Operators |
-|               | Sorting Hat Exercise            |
+|               | **Exercise** Sorting Hat        |
 | 10:30 - 10:45 | Break                           |
 | 10:45 - 11:30 | 03 Program Structure            |
-|               | FizzBizz Exercise               |
+|               | **Exercise** FizzBizz           |
 | 11:30 - 12:30 | Lunch                           |
-| 12:30 - 1:30  | Create Chessboard exercise      |
+| 12:30 - 1:30  | **Exercise** Create Chessboard  |
 | 1:30 - 1:45   | Break                           |
 | 1:45 - 3:00   | Intro to Functions              |

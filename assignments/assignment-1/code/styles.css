@@ -10,9 +10,6 @@ h1 {
     max-width: 900px;
 }
 
-
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 NAV 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -20,9 +17,9 @@ nav {
     border-bottom: 1px solid #ededed;
 }
 
-nav .container {
-    display: flex !important;
-    align-items: center !important;
+.navbar > .container {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -55,9 +52,6 @@ nav .container ul li {
     }
 }
 
-
-
-
 /* TILES */
 .card-row {
     display: flex;
@@ -67,16 +61,17 @@ nav .container ul li {
 .card {
     height: 280px;
     border-radius: 10px;
-    background: rgba(23,35, 50, 1);
+    background: rgba(23, 35, 50, 1);
     flex: 1 230px;
     margin: 10px;
     padding: 20px;
     position: relative;
-    box-shadow: 2px 8px 9px 0px rgba(0, 0, 0, 0.14), 11px 11px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 8px 9px 0px rgba(0, 0, 0, 0.14),
+        11px 11px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card .buy-button {
-    position:absolute;
+    position: absolute;
     bottom: 20px;
     left: 20px;
     background: white;
@@ -88,17 +83,14 @@ nav .container ul li {
 }
 
 .card .topic {
-     color: white;
+    color: white;
     font-weight: 300;
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 5px;
-
 }
 .card .title {
     color: white;
     font-weight: 700;
     font-size: 22px;
 }
-
-

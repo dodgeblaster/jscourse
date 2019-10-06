@@ -37,4 +37,4 @@ If you would rather have a hard copy, you can buy one, but the online version ha
 | Assignment #2 | 13.3333333333333% | [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-2) |  
 | Assignment #3 | 13.3333333333333% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-3) |  
 | Assignment #4 | 40% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-4) |  
-
+| Attendance | 20% | Self explanitory |

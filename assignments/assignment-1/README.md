@@ -11,12 +11,6 @@ const item = {
 }
 ```
 
-Make buttons at the top that display the same data but order them by:
-
--   name
--   color
--   price
-
 ## How will this be marked?
 
 #### I will not mark your assignment until the following is true:
@@ -29,11 +23,9 @@ Make buttons at the top that display the same data but order them by:
 
 I will be asking the following questions
 
--   Do the tiles match the data in the javascript file (1 point)
--   Did your solution use a loop? (1 point)
--   Did you use variables (1 point)
+-   Do the tiles match the data in the javascript file
+-   Did your solution use a loop?
+-   Did you use variables
 -   Did you keep your code shallow (did you stay under 2 nested levels)
--   Do you have 1 button that orders tiles by name
--   Do you have 1 button that orders tiles by color
--   Do you have 1 button that orders tiles by price
+
 

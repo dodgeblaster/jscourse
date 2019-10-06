@@ -1,5 +1,11 @@
 # Assignment #2 - Mobile Menu
 
+### Starter files
+[Click here to download files](https://htmlbasicsresources.s3.amazonaws.com/js-assignment2.zip)
+
+
+### Details
+
 In this assignment, we are going to make a mobile menu using css animations and js:
 ## How will this be marked?
 

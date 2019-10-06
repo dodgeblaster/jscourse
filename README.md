@@ -31,18 +31,10 @@ We have one, and its available online for free:
 If you would rather have a hard copy, you can buy one, but the online version has the benefit of constantly being updated, so I recommend using the free digital version.
 
 ### Assigments
-- Assignment #1
-  - Worth 13%
-  - [Details]()
-  
-- Assignment #2
-  - Worth 13%
-  - [Details]()
-  
-- Assignment #3
-  - Worth 13%
-  - [Details]()
-  
-- Assignment #4
-  - Worth 40%
-  - [Details]()
+| Name | Percent of Grade | Details |
+| --- | --- | --- |
+| Assignment #1 | 13.3333333333333% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-1) |  
+| Assignment #2 | 13.3333333333333% | [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-2) |  
+| Assignment #3 | 13.3333333333333% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-3) |  
+| Assignment #4 | 40% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-4) |  
+

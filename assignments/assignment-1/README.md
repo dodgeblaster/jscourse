@@ -1,5 +1,11 @@
 # Assignment #1 - Adding Tiles
 
+### Starter files
+[Click here to download files](https://htmlbasicsresources.s3.amazonaws.com/js-assignment1.zip)
+
+
+### Details
+
 In this assignment, we are going to take an array of data and turn that into tiles on the index page.
 These tiles are created from data that looks like the following:
 

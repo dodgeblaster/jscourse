@@ -1,28 +1,19 @@
-# Assignment #2 - Weather App
+# Assignment #2 - Mobile Menu
 
-In this assignment, we are going to fetch weather data from a server and display:
-- todays weather
-- the following weeks weather
-
+In this assignment, we are going to make a mobile menu using css animations and js:
 ## How will this be marked?
 
 #### I will not mark your assignment until the following is true:
 - Can I visit a github repo?
 - Can I visit a url to see the final result?
+- Are the assets correctly connected (css, imgs) when I visit the url
 
 #### Requirements
-In order to get 90%, I will be asking the following questions
-- Is there a loading page?
-- Does todays weather display correctly?
-- Do all 6 days of the upcoming week display correctly?
-- Are server errors handled gracefully?
-- Are the correct icons being displayed based on weather type?
+I will be asking the following questions
+- Does the navigation hide in mobile width
+- Can I click on the mobile menu icon to open the mobile navigation
+- Can I close the mobile navigation by clicking on the close icon
+- Does the mobile navigation transition in rather than instantly show up
 
-#### Over and Above
-In order to get above 90%, you will need to do one of the following:
-- Did you create your own design?
-- Does something other than text and icons change in response to the weather type? Examples:
-    - colors
-    - imgs
 
 

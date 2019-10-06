@@ -1,5 +1,10 @@
 # Assignment #3 - Weather App
 
+### Starter files
+[Click here to download files](https://htmlbasicsresources.s3.amazonaws.com/js-assignment3.zip)
+
+
+### Details
 In this assignment, we are going to fetch weather data from a server and display:
 - todays weather
 - the following weeks weather

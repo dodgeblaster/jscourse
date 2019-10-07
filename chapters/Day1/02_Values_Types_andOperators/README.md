@@ -12,33 +12,59 @@
 
 ## Chapter concepts overview (Demonstration)
 
-#### Expressions
 
--   what is an expression
--   what is a value
+## Values
+- Number
+- String
+- Boolean
+- Empty Values
+  - undefined
+  - null
+  - NaN
+  
+## Operators
+```js
+// Unary
+typeof
 
-##### How Numbers work
+// Binary
+// Mathmatical Operators
++ // Add
+- // Subtract
+/ // Divide
+* // Multiply
+% // Remainder
 
--   numbers (value)
--   arithmatic (operator) (+ - \* /)
+// Comparison Operators
+=== // is equal
+!== // is not equal
+>   // is bigger than
+<   // is smaller than
+>=  // is bigger or equals
+<=  // is smaller or equals
 
-##### How Words work
+// Logical
+&& // and
+|| // or
+```
 
--   strings (value)
--   typeof (unary operator)
--   unary vs binary vs ternary expressions
+## Helpful way to think about Logical Operators
 
-##### Switches and comparisons
+```js
+(true && false && true)
+// 1 x 0 x 1 = 0, therefor false
 
--   with booleans
--   comparison (operator)(== === > >= < <=)
--   logical (operators) (&& ||)
+(true && true && true)
+// 1 x 1 x 1 = 1, therefor true
 
-##### Empty Values
+(true || false || true)
+// 1 + 0 + 1 = 2, therefore true
 
--   emptyValues (values) (null, undefined)
--   short circuiting (strategy) (operator)
--   Discuss what 'falsy' means in js, and why its important to have a good understanding of it
+(false || false || false)
+// 0 + 0 + 0 = 0, therefore false
+
+```
+
 
 ## Chapter Exercises (In Class Work)
 

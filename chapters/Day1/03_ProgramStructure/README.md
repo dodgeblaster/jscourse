@@ -45,7 +45,7 @@ If, If Else, Else:
 ```js
 if (something) {
   // do something...
-} else if (something else) {
+} else if (somethingElse) {
   // else do this...
 } else {
   // otherwise, always do this thing

@@ -2,7 +2,7 @@
 
 ## Goals
 
-Today, our goal is build a starwars encyclopedia
+Today, our goal is build a mobile menu and learn about how to fetch data from a server
 
 ## Technical things we need to learn to accomplish are goal
 
@@ -16,20 +16,18 @@ We need to know understand how to work with requests that have an unknown return
 -   Callbacks
 -   Promises
 
-And how to send and receive HTTP traffic using:
 
--   JSON
 
 ## Schedule
 
 | Time          | Name                        |
 | ------------- | --------------------------- |
-| 8:00 - 9:30   | 01 Async Programming        |
+| 8:00 - 9:30   | Build Mobile Menu Together       |
 | 9:30 - 9:45   | Break                       |
-| 9:45 - 10:30  | 01 Async Programming        |
+| 9:45 - 10:30  | Assignment #2       |
 | 10:30 - 10:45 | Break                       |
-| 10:45 - 11:30 | 02 HTTP and Forms           |
+| 10:45 - 11:30 | Assignment #2           |
 | 11:30 - 12:30 | Lunch                       |
-| 12:30 - 1:30  | Build starwars encyclopedia |
+| 12:30 - 1:30  | 1. Async Programming |
 | 1:30 - 1:45   | Break                       |
-| 1:45 - 3:00   | Assignment #2               |
+| 1:45 - 3:00   | 1. Async Programming             |

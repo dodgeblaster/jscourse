@@ -56,7 +56,6 @@ It used to build:
 ### Current state of Javascript
 [NPM Article](https://medium.com/npm-inc/this-year-in-javascript-2018-in-review-and-npms-predictions-for-2019-3a3d7e5298ef)
 
-### Outcomes we are aiming for in this course
-- General knowledge of JS
-- You can react to events in the browser and change things in the browser with JS
-- You can get data from a server and update the DOM
+### Where to write js?
+- in a app.js file that we connect to our index.html
+- in the console inside dev tools

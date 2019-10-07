@@ -42,14 +42,7 @@
 
 ## Chapter Exercises (In Class Work)
 
-With console.log and variables (which we will go over in the next unit), create a Harry Potter
-sorting hat. How it works:
-
--   prompt the user and ask them what their favorite color
--   ask what their favorite animal is
--   handle input that doesnt match any if statements
--   after two questions have been asked, console.log the house they belong to
-
+Download exercise files and make a sorting hat app using if statements.
 For those who have never read Harry Potter, here is the answer key:
 
 | House      | Color  | Animal |

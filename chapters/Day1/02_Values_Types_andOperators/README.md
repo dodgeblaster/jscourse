@@ -58,7 +58,7 @@ typeof
 // 1 x 1 x 1 = 1, therefor true
 
 (true || false || true)
-// 1 + 0 + 1 = 2, therefore true
+// 1 + 0 + 1 = more than 0, therefore true
 
 (false || false || false)
 // 0 + 0 + 0 = 0, therefore false

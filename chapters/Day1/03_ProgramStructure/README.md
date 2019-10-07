@@ -18,12 +18,23 @@
 
 ### functions
 
--   console.log()
--   prompt
--   return values
--   control flow (branchs, leading into if statements)
+##### 2 Functions we have seen so far:
+```js
+prompt('the question I want to ask') // Input
+console.log('The message I want to log') // Output
+```
 
-### Statements - If statements
+##### Every function also evaluates, and returns a value of some kind:
+```js
+console.log('my message')
+// returns undefined
+
+prompt('my question')
+// returns answer to the question
+```
+
+
+### Logic - If statements
 
 If:
 ```js
@@ -68,7 +79,26 @@ if (num < 10) {
 }
 ```
 
-### Do While Loops
+### Logic - Switch Statements
+
+```js
+switch (prompt("What is the weather like?")) {
+  case "rainy":
+    console.log("Remember to bring an umbrella.");
+    break;
+  case "sunny":
+    console.log("Dress lightly.");
+  case "cloudy":
+    console.log("Go outside.");
+    break;
+  default:
+    console.log("Unknown weather type!");
+    break;
+}
+```
+
+
+### Loops - Do While Loops
 ```js
 let number = 0;
 while (number <= 12) {
@@ -77,7 +107,7 @@ while (number <= 12) {
 }
 ```
 
-### Statements - For Loops
+### Loops - For Loops
 
 ##### For Loops
 ```js
@@ -100,29 +130,6 @@ for (let current = 20; ; current = current + 1) {
   }
 }
 ```
-
-### Switch Statements
-
-```js
-switch (prompt("What is the weather like?")) {
-  case "rainy":
-    console.log("Remember to bring an umbrella.");
-    break;
-  case "sunny":
-    console.log("Dress lightly.");
-  case "cloudy":
-    console.log("Go outside.");
-    break;
-  default:
-    console.log("Unknown weather type!");
-    break;
-}
-
-```
-
-### Comments
-
--   how to use comments
 
 ## Chapter Exercises (In Class Work)
 

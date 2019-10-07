@@ -1,0 +1,82 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+GENERAL
+- - - - - - - - - - - - - - - - - - - - - - - - */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+    height: 80px;
+    background: #333;
+}
+
+header nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header .logo {
+    background: url('./assets/logo.svg');
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+}
+
+header .menu {
+    background: url('./assets/menu.svg');
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+}
+
+header .close {
+    background: url('./assets/close.svg');
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 400px;
+    height: 40px;
+    background: blue;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HERO
+- - - - - - - - - - - - - - - - - - - - - - - - */
+.hero {
+    background: #555;
+    height: 70vh;
+    padding-top: 10vh;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+MAIN CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - */
+.main-content {
+    height: 600px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+    height: 300px;
+    background: #333;
+}

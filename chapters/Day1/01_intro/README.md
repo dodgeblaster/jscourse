@@ -2,7 +2,7 @@
 
 ### What products are built using JS?
 
-It used to build:
+It is used to build:
 
 -   frontend web apps
     -   every single web app that has ever lived
@@ -56,6 +56,6 @@ It used to build:
 ### Current state of Javascript
 [NPM Article](https://medium.com/npm-inc/this-year-in-javascript-2018-in-review-and-npms-predictions-for-2019-3a3d7e5298ef)
 
-### Where to write js?
+### Where can we write js?
 - in a app.js file that we connect to our index.html
 - in the console inside dev tools

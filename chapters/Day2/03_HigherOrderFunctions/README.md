@@ -4,10 +4,6 @@
 
 -   Why do we need higher order functions?
 
-## Read Chapter (In Class Reading)
-
--   Read chapter in 30 minutes
-
 ## Chapter concepts overview (Demonstration)
 
 #### function composition
@@ -15,32 +11,22 @@
 -   how to make specific functions out of general functions
 -   greaterThan, greaterThan10
 
-#### partial application (not mentioned in chapter)
-
--   how we can create functions with partial application
-
 #### forEach
-
--   how to use forEach
+-   demonstrate to use forEach
+- work thru exercises
 
 #### filter
-
--   how to use filter
+-   demonstrate to use filter
+- work thru exercises
 
 #### map
-
--   how to use map
--   this is good for data processing
+-   demonstrate to use map
+- work thru exercises
 
 #### reduce
-
--   how to use reduce
+-   demonstrate to use reduce
+- work thru exercises
 
 #### chaining
-
 -   how all these functions can be chained
 
-## Chapter Exercises
-
--   turn one set of data into another (not in book)
--   filter.map.reduce execise (objects, filter based on param, map to value, then add it all up)

@@ -32,9 +32,6 @@
 -   make sure to keep complexity low
 -   nesting if statements is not great
 
-### loops
-
--   do while
 
 ### Statements - For Loops
 

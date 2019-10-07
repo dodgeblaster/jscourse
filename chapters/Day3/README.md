@@ -28,6 +28,6 @@ And how to receive input or events from it, using:
 | 10:30 - 10:45 | Break              |
 | 10:45 - 11:30 | 03 Handling Events |
 | 11:30 - 12:30 | Lunch              |
-| 12:30 - 1:30  | Assignment #1      |
+| 12:30 - 1:30  | Build a Calculator together    |
 | 1:30 - 1:45   | Break              |
 | 1:45 - 3:00   | Assignment #1      |

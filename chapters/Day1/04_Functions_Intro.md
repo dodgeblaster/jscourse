@@ -1,5 +1,5 @@
 # Functions
-A function is an action, is verbs in your program, the things you want your program to do. 
+A function is an action, its the verbs in your program, the things you want your program to do. 
 
 ```js
 function sayHello() {

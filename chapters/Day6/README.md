@@ -1,38 +1,35 @@
-# Modern JS
+# Day 5
 
-## Webpack
+## Goals
 
-webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
+Today, our goal is to build a netflix home page that gracefully handles errors when the server
+cant get a certain category of movies
 
-#### What is the difference between Webpack and Gulp?
+## Technical things we need to learn to accomplish are goal
 
-Gulp is a general task runner. Its great for transforming files, running bash scripts, running gulp plugins.
-Webpack is a dedicated solution for transforming Javascript files. Infact, it is not uncommon to see projects that have gulp as
-a task runner, and as one of its tasks, runs a webpack process that will transform your js.
+In order to do that, we will need to learn more about objects:
 
-#### Links
+-   The Secret List of Objects
 
--   [Webpack site](https://webpack.js.org)
--   [webpack github](https://github.com/webpack)
--   [webpack npm](https://www.npmjs.com/package/webpack)
--   [gulp webpak plugin](https://www.npmjs.com/package/webpack-stream)
+We need to know how to deal with errors when they happen, using:
 
-#### Setup webpack
+-   Error Handling
 
--   go over how to use webpack in project
+And how to valid things in order to avoid errors as much as possible, using:
 
-#### Import Syntax
+-   Regular Expressions
 
-A big win you get out of the box with webpack, without any config, is
-the ability to use the import/export syntax
+## Schedule
 
--   go over how to import
--   go over how to export
+| Time          | Name              |
+| ------------- | ----------------- |
+| 8:00 - 9:30   | 01 Objects        |
+| 9:30 - 9:45   | Break             |
+| 9:45 - 10:30  | 02 Error Handling |
+| 10:30 - 10:45 | Break             |
+| 10:45 - 11:30 | 03 Regex          |
+| 11:30 - 12:30 | Lunch             |
+| 12:30 - 1:30  | Assignment #2     |
+| 1:30 - 1:45   | Break             |
+| 1:45 - 3:00   | Assignment #2     |
 
-#### Webpack Config
-
--   show how to setup a webpack config file
-
-#### Webpack Transform
-
--   show how to transform js with babel

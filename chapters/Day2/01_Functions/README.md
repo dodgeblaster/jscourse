@@ -26,6 +26,39 @@ const square = x => x * x
 
 ```
 
+
+#### Pure Function vs a Function tied to its environment
+
+Function tied to its environment:
+```js
+const main = () => {
+  const sneakyDependancy = 5
+
+  const printFinalScore = () => {
+    console.log(sneakyDependancy)
+  }
+  
+  printFinalScore()
+}
+
+main()
+```
+
+Function that doesnt care about its environment
+```js
+const main = () => {
+  const sneakyDependancy = 5
+
+  const printFinalScore = (x) => {
+    console.log(x)
+  }
+  
+  printFinalScore(sneakyDependancy)
+}
+
+main()
+```
+
 #### Scope
 
 -   when using const and let, scope is defined by blocks

@@ -67,8 +67,8 @@ const b = 2
 
 function f1(a) {
   // it gets a from the arguments, so thats straightforward,
-  // but if be is not defined in this function, it will go up 1 'scope' and see if its defined there
-  // all the way up to global scope
+  // but if b is not defined in this function, it will go up 1 'scope' and see if its defined there
+  // and will continue going up the next level of scope, all the way up to global scope until it finds the variable
 	console.log( a + b );
 }
 

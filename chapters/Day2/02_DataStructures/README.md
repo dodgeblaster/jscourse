@@ -73,6 +73,20 @@ myArray[1] // will return 2 because its at the index of 1
     - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
     - returns part of the array, alters the original 
 
+#### Good example of practical use for Array methods
+```js
+let todoList = [];
+function remember(task) {
+  todoList.push(task);
+}
+function getTask() {
+  return todoList.shift();
+}
+function rememberUrgently(task) {
+  todoList.unshift(task);
+}
+```
+
 #### Spreading an Array
 
 ```js

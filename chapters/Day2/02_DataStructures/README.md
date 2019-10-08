@@ -97,7 +97,7 @@ const listOfPlayers = [
      {
         id: 123456,
         name: 'Jane',
-        score: 20,
+        score: 20, // notice the increased value here
         team: 'red'
     }
 ]

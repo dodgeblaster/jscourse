@@ -87,6 +87,26 @@ function f1(a) {
 }
 
 f1( 2 ) // 6
+```
+
+If we have multiple levels of scope, it always look at whats closest to it, and works its way out:
+```js
+const hummus = function(factor) {
+  const ingredient = function(amount, unit, name) {
+    let ingredientAmount = amount * factor; // first looks for factor inside this function, then in its parents scope
+    if (ingredientAmount > 1) {
+      unit += "s";
+    }
+    console.log(`${ingredientAmount} ${unit} ${name}`);
+  };
+  ingredient(1, "can", "chickpeas");
+  ingredient(0.25, "cup", "tahini");
+  ingredient(0.25, "cup", "lemon juice");
+  ingredient(1, "clove", "garlic");
+  ingredient(2, "tablespoon", "olive oil");
+  ingredient(0.5, "teaspoon", "cumin");
+};
+```
 
 
 How scope works with ES5 vars:

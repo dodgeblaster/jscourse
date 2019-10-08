@@ -52,7 +52,7 @@
 
 - make a function called 'chooseRandomTeam'. It should take an array of strings and return a string.
 
--   make a 'createPlayer' function . It should take a string (name), and returns the following object with a random team assigned:
+-   make a 'createPlayer' function . It should take a string (name of player), and returns the following object with a random team assigned and a random id:
 ```js
 {
   id: 'random id from the generateId function
@@ -61,8 +61,6 @@
   team: 'random team from the chooseRandomTeam function.'
 }
 ```
-
-
 
 -   make a function called add10Points. It should take an array of players, and the name of the person you want to add 10 points to. It should return a new array with the updated score. Example:
 

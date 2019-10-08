@@ -48,7 +48,7 @@
 
 ## Chapter Exercises
 
-- make a function called 'generateId'. It should take no arguments and return a string. Hint: Math.random might be helpful here.
+- make a function called 'generateId'. It should take no arguments and return a string. Hint: Math.random might be helpful here. Click [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for MDN's docs on Math.random
 
 - make a function called 'chooseRandomTeam'. It should take an array of strings and return a string.
 

@@ -35,19 +35,67 @@ const dog = {
 -   updating values on an object
 
 #### Array methods
-
--   shift
--   unshift
 -   push
+```js
+const myArray = [1,2,3,4]
+myArray.push(5)
+// now the array is [1,2,3,4,5]
+
+// note: we can change the array even though its defined as const, because its still pointing to the same
+// array. The contents of the array have been updated, not the entire array reference.
+
+```
+- pop
+```js
+const myArray = [1,2,3,4]
+myArray.pop()
+// now the array is [1,2,3]
+```
+-   shift
+```js
+const myArray = [1,2,3,4]
+myArray.shift()
+// now the array is [2,3,4]
+```
+-   unshift
+```js
+const myArray = [2,3,4]
+myArray.unshift(1)
+// now the array is [1,2,3,4]
+```
 -   indexOf
+```js
+const myArray = [1,2,3,4]
+myArray.indexOf(2) // 2 being that value in the array
+// returns 1, which is the index
+myArray[1] // will return 2 because its at the index of 1
+```
 -   slice
+  - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+  - returns part of the array, doesnt alter the original
 -   splice
--   concat
+  - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+  - returns part of the array, alters the original 
 
 #### Spreading an Array
 
--   how to spread an array
--   easy way to create a new array with a new value
+```js
+// if i have 2 lists, i an create a combined list with the spread operator:
+const list1 = [1,2,3]
+const list2 = [4,5,6]
+const newList = [
+  ...list1,
+  ...list2
+]
+// new list = [1,2,3,4,5,6]
+
+// this is also another way to add something to a list:
+const newestList = [
+  ...newList,
+  7
+]
+// results in [1,2,3,4,5,6,7]
+```
 
 #### Desctructuring
 

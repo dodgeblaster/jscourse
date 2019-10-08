@@ -226,6 +226,17 @@ A side effect means changing something elsewhere. Typically changing or doing so
 - another way to think of side effects is to think of a function that does something other than return a value.
 -   Advice: having lots of functions with lots of side effects is like having strings of yarn going everywhere, which makes your code more complex and harder to understand
 
+```js
+const functionWithSideEffect = x => {
+	const shout = x + '!!!!'
+	console.log(shout)
+}
+
+const functionWithNoSideEffect = x => {
+	return x + '!!!!'
+}
+```
+
 ## Chapter Exercises (In Class Work)
 
 -   Minimum (from book)

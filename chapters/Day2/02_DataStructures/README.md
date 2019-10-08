@@ -15,11 +15,22 @@
 
 #### How to make an array
 
--   How to make an array
--   arrays can have any value, can have different types in the same array (although not recommended)
+```js
+const list = []
+const listWithItems = ['apple', 'orange']
+```
+
+#### How to make an Object
+```js
+const obj = {}
+const dog = {
+    legs: 4,
+    color: 'brown',
+    bark: 'loud'
+}
+```
 
 #### Object Mutability
-
 -   updating arrays
 -   updating values on an object
 

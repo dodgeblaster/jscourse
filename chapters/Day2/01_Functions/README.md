@@ -61,7 +61,22 @@ main()
 
 #### Scope
 
-How scope wirks with ES5 vars:
+General Idea:
+```js
+const b = 2
+
+function f1(a) {
+  // it gets a from the arguments, so thats straightforward,
+  // but if be is not defined in this function, it will go up 1 'scope' and see if its defined there
+  // all the way up to global scope
+	console.log( a + b );
+}
+
+f1( 2 ) // 4
+
+```
+
+How scope works with ES5 vars:
 ```js
 const f1 = () => {
   var var1 = 1
@@ -96,7 +111,7 @@ if (true) {
   console.log(const2); // works
 }
 
-console.log(const2); // deos notwork because const listens to block scope
+console.log(const2); // does not work because const and let listens to block scope
 ```
 #### Explain the call stack
 

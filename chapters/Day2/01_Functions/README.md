@@ -61,9 +61,43 @@ main()
 
 #### Scope
 
--   when using const and let, scope is defined by blocks
--   Demonstration on how variable is not recognized outside of scope
+How scope wirks with ES5 vars:
+```js
+const f1 = () => {
+  var var1 = 1
+  console.log(var1); // works
+}
 
+f1()
+console.log(var1); // does not work, its inside the functions scope
+
+
+if (true) {
+  var var2 = 2
+  console.log(var2); // works
+}
+
+console.log(var2); // works because var doesnt listen to block scope
+```
+How scope works with ES6 let and const
+```js
+
+const f1 = () => {
+  const const1 = 1
+  console.log(const1); // works
+}
+
+f1()
+console.log(const1); // does not work, its inside the functions scope
+
+
+if (true) {
+  const const2 = 2
+  console.log(const2); // works
+}
+
+console.log(const2); // deos notwork because const listens to block scope
+```
 #### Explain the call stack
 
 -   Demonstration of call stack with function calls

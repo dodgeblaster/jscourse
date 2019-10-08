@@ -30,10 +30,6 @@ const dog = {
 }
 ```
 
-#### Object Mutability
--   updating arrays
--   updating values on an object
-
 #### Array methods
 -   push
 ```js
@@ -97,13 +93,25 @@ const newestList = [
 // results in [1,2,3,4,5,6,7]
 ```
 
+
+#### Object Methods
+- Object.keys
+```js
+const obj = {
+    name: 'John',
+    job: 'developer
+}
+
+Object.keys(obj) // will return an array of all the keys
+
+
+```
 #### Desctructuring
 
--   how get values out of object
-
-#### JSON
-
--   why is a JSON a thing? because usually u dont want to save an object and all its memory references and locations, just the raw data
+```js
+const personFromDatabase = {name: "Faraji", age: 23}
+const {name} = personFromDatabase
+```
 
 ## Chapter Exercises
 

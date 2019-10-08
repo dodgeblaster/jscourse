@@ -192,7 +192,31 @@ makePainting()
 #### Closures
 
 -   Demonstration of closures with explanation that closures are simply frozen environments, or remembered environments
--   Code demonstration
+```js
+function wrapValue(n) {
+  // when this function returns a new function, it will freeze and take its scope with it where ever it goes
+  let local = n;
+  return () => local;
+}
+
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(2);
+console.log(wrap1());
+// → 1
+console.log(wrap2());
+// → 2
+```
+This is great because we can provide some values to a functions scope, freeze it (happens automatically when we
+return this new function), and it can later reference that scope, or closure when we call it in the future:
+```js
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5));
+// → 10
+```
 
 #### Side effects
 

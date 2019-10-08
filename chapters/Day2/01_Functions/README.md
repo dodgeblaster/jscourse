@@ -13,7 +13,7 @@
 
 #### 3 ways to write functions
 
-```
+```js
 const square = function(x) {
   return x * x;
 }
@@ -27,7 +27,7 @@ const square = x => x * x
 ```
 
 
-#### Pure Function vs a Function tied to its environment
+#### Function tied to its environment vs Functions that are not
 
 Function tied to its environment:
 ```js

@@ -71,11 +71,11 @@ myArray.indexOf(2) // 2 being that value in the array
 myArray[1] // will return 2 because its at the index of 1
 ```
 -   slice
-  - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-  - returns part of the array, doesnt alter the original
+    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+    - returns part of the array, doesnt alter the original
 -   splice
-  - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
-  - returns part of the array, alters the original 
+    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+    - returns part of the array, alters the original 
 
 #### Spreading an Array
 

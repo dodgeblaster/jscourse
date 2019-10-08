@@ -7,6 +7,7 @@
 ## Chapter concepts overview (Demonstration)
 
 #### function composition
+For Loop example
 ```js
 function repeat(n, action) {
   for (let i = 0; i < n; i++) {
@@ -18,8 +19,15 @@ repeat(3, console.log);
 
 ```
 
--   how do we make specific functions out of general functions
--   greaterThan, greaterThan10
+Greater Than Example
+```js
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+```
+
 
 #### forEach
 -   demonstrate to use forEach

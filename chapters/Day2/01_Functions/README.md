@@ -222,10 +222,8 @@ Helpful quote from Eloquent Javascript on closures:
 Thinking about programs like this takes some practice. A good mental model is to think of function values as containing both the code in their body and the environment in which they are created. When called, the function body sees the environment in which it was created, not the environment in which it is called
 
 #### Side effects
-
--   Explanation of the importance of differentiating between pure functions and functions with side effects
--   Explanation of how pure functions can be simpler
--   Explanation of why keeping the number of side effect functions as low as possible is preferable
+A side effect means changing something elsewhere. Typically changing or doing something that is not explicitly in the function. We must have some functions that do this, but if all our functions do this, our code can get complicated.
+- another way to think of side effects is to think of a function that does something other than return a value.
 -   Advice: having lots of functions with lots of side effects is like having strings of yarn going everywhere, which makes your code more complex and harder to understand
 
 ## Chapter Exercises (In Class Work)

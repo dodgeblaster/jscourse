@@ -75,6 +75,19 @@ function f1(a) {
 f1( 2 ) // 4
 
 ```
+If we have the same variable defined in multiple score:
+```js
+const b = 2
+
+function f1(a) {
+  // it gets a from the arguments, so thats straightforward,
+  // it also gets b from inside this scope rather than the one oustide, because it looks here first. 
+  	const b = 4
+	console.log( a + b );
+}
+
+f1( 2 ) // 6
+
 
 How scope works with ES5 vars:
 ```js

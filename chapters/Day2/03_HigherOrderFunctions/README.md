@@ -7,8 +7,18 @@
 ## Chapter concepts overview (Demonstration)
 
 #### function composition
+```js
+function repeat(n, action) {
+  for (let i = 0; i < n; i++) {
+    action(i);
+  }
+}
 
--   how to make specific functions out of general functions
+repeat(3, console.log);
+
+```
+
+-   how do we make specific functions out of general functions
 -   greaterThan, greaterThan10
 
 #### forEach

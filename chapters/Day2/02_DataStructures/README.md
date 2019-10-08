@@ -72,6 +72,32 @@ myArray[1] // will return 2 because its at the index of 1
 -   splice
     - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
     - returns part of the array, alters the original 
+    
+    
+- find
+```js
+const found = [1,2,3,4].find(x => {
+    return x === 3
+})
+
+const user = [
+    {
+        id: 1,
+        name: 'John'
+    },
+    {
+        id: 2,
+        name: 'James'
+    },
+    {
+        id: 3,
+        name: 'Jane'
+    }
+].find(x => {
+    return x.id === 2
+})
+
+```
 
 #### Good example of practical use for Array methods
 ```js

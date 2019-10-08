@@ -11,10 +11,6 @@
 -   How do I represent all of this in one single value?
 -   You cant, (string isnt a good option), thats why we have objects, to group values (including functions) together
 
-## Read Chapter (In Class Reading)
-
--   Read chapter in 30 minutes
-
 ## Chapter concepts overview (Demonstration)
 
 #### How to make an array
@@ -52,21 +48,62 @@
 
 ## Chapter Exercises
 
--   make a range function (from book)
--   make a function called: add10Points(listOfPlayers, player)
-    it will take an array of players like this:
+- make a function called 'generateId'. It should take no arguments and return a string. Hint: Math.random might be helpful here.
 
+- make a function called 'chooseRandomTeam'. It should take an array of strings and return a string.
+
+-   make a 'createPlayer' function . It should take a string (name), and returns the following object with a random team assigned:
+```js
+{
+  id: 'random id from the generateId function
+  name: 'Name of Player',
+  score: 0,
+  team: 'random team from the chooseRandomTeam function.'
+}
 ```
-[
+
+
+
+-   make a function called add10Points. It should take an array of players, and the name of the person you want to add 10 points to. It should return a new array with the updated score. Example:
+
+
+```js
+
+// Before:
+const listOfPlayers = [
     {
+        id: 123456,
         name: 'John',
-        points: 10
+        score: 10,
+        team: 'red'
     },
      {
+        id: 123456,
         name: 'Jane',
-        points: 10
+        score: 10,
+        team: 'red'
+    }
+]
+
+// call function
+const updatedPlayerList = add10Points(listOfPlayers, 'Jane')
+
+// After:
+const listOfPlayers = [
+    {
+        id: 123456,
+        name: 'John',
+        score: 10,
+        team: 'red'
+    },
+     {
+        id: 123456,
+        name: 'Jane',
+        score: 20,
+        team: 'red'
     }
 ]
 ```
 
-and a players name, and returns a new array with the points added
+- make a function called getTeamsOverallScore. It should take an array of players and a team name. It should return a number of the total score of all players on that team. (if all team members have zero points, then it should return zero).
+

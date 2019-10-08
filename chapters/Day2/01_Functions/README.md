@@ -148,9 +148,47 @@ console.log(const2); // does not work because const and let listens to block sco
 ```
 #### Explain the call stack
 
--   Demonstration of call stack with function calls
--   Demonstrate debugger
+```js
 
+const chooseRed = () => {
+	console.log('chose red')
+}
+
+const chooseBlue = () => {
+	console.log('chose red')
+}
+
+const chooseYellow = () => {
+	console.log('chose red')
+}
+
+const setupCanvas = () => {
+	console.log('canvas is setup')
+}
+
+const chooseColors = () => {
+	chooseBlue()
+	chooseYellow()
+}
+
+const paint = () => {
+	console.log('painted')
+}
+
+const signMyName = () => {
+	console.log('name signed')
+}
+
+const makePainting = () => {
+	setupCanvas()
+	chooseColors()
+	paint()
+	signMyName()
+}
+
+makePainting()
+
+```
 #### Closures
 
 -   Demonstration of closures with explanation that closures are simply frozen environments, or remembered environments

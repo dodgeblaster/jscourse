@@ -75,6 +75,7 @@ myArray[1] // will return 2 because its at the index of 1
     
     
 - find
+Find is unique in that it takes a function. Lets spend some time talking through how this works...
 ```js
 const found = [1,2,3,4].find(x => {
     return x === 3

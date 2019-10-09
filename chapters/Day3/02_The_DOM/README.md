@@ -89,7 +89,7 @@ Get the Page horizontal scroll position with pageYOffset
 const horizontalPosition = window.pageYOffset
 ```
 
-## Dealing with the annouying fact that query selector does not return a real array
+## Dealing with the annoying fact that query selector does not return a real array
 ```js
 const divs = document.querySelectorAll('div') // currently a NodeList
 const divsInProperArray = Array.from(divs)

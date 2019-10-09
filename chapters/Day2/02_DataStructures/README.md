@@ -123,7 +123,7 @@ function updateName(student, name) {
     // do something
 }
 
-const updatedStudent = updateName(student, 'John')
+const updatedStudent = updateName(john, 'John')
 console.log(updatedStudent)
 ```
 
@@ -139,7 +139,7 @@ function updateCountry(student, name) {
     // do something
 }
 
-const updatedStudent = updateCountry(student, 'John')
+const updatedStudent = updateCountry(john, 'CDN')
 console.log(updatedStudent)
 ```
 
@@ -155,7 +155,7 @@ function updateEmail(student, name) {
     // do something
 }
 
-const updatedStudent = updateEmail(student, 'John')
+const updatedStudent = updateEmail(john, 'john@example.com')
 console.log(updatedStudent)
 ```
 

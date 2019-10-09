@@ -96,6 +96,33 @@ const divsInProperArray = Array.from(divs)
 ```
 
 
+## 2 ways to add things to the DOM
+- innerHTML (easy way to add lots of html all at once)
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+```js
+document.innerHTML = `
+<p class='title'>text inside paragraph tag</p>
+`
+```
+
+- appending a child: (more precise and programatic way if you need it)
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+```js
+const title = document.createElement('p')
+title.className = 'title'
+title.textContent = 'text inside paragraph tag'
+title.style.background = 'purple'
+
+document.appendChild(title)
+```
+
+## Update something in an already existing HTML tag
+```js
+const element = document.querySelector('#weather')
+element.innerText = 'new text'
+element.className = 'header'
+```
+
 # Exercise
 - do the mountain exercise
 - do the getElementsByTagName exercise

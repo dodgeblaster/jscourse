@@ -30,7 +30,7 @@ const dog = {
 }
 ```
 
-#### Array methods
+# Working with Arrays
 -   push
 ```js
 const myArray = [1,2,3,4]
@@ -66,6 +66,50 @@ myArray.indexOf('two') // 2 being that value in the array
 // returns 1, which is the index
 myArray[1] // will return 'two' because its at the index of 1
 ```
+-   slice
+    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+    - returns part of the array, doesnt alter the original
+-   splice
+    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+    - returns part of the array, alters the original 
+    
+
+## Exercises
+- Make a function that takes a list (of strings), and adds an item, and returns the updated list
+```js
+const exampleList = [
+    'banans',
+    'oranges',
+    'apples'
+]
+
+function addToList(list, item) {
+
+}
+
+```
+
+- Make a function that takes a list and removes the last item, and returns the updated list
+```js
+function removeLastItem(list){
+
+}
+```
+
+- Make a function that adds an item to the beginning of a list, and returns the updated list:
+```js
+function addToBeginningOfList(list, item) {
+
+}
+```
+
+- Make a function that removes an item from the beginning of the list, and returns the updated list:
+```js
+function removeFromBeginningOfList(list) {
+
+}
+```
+# Array Methods
 - findIndex (good for arrays with complex data types, AKA objects
 ```js
 
@@ -84,13 +128,7 @@ const result = myArray.findIndex(function(x) {
 const result = myArray.findIndex(x => x.name === 'two') // will return 1
 ```
 
--   slice
-    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-    - returns part of the array, doesnt alter the original
--   splice
-    - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
-    - returns part of the array, alters the original 
-    
+
     
 - find
 Find is unique in that it takes a function. Lets spend some time talking through how this works...

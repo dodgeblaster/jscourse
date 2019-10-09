@@ -100,12 +100,14 @@ const divsInProperArray = Array.from(divs)
 - innerHTML (easy way to add lots of html all at once)
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 ```js
-document.innerHTML = `
+
+const placeIWantToPutText = document.querySelector('#content')
+placeIWantToPutText.innerHTML = `
 <p class='title'>text inside paragraph tag</p>
 `
 ```
 
-- appending a child: (more precise and programatic way if you need it)
+- appending a child: (more precise and programatic way, also doesnt replace everything, but just adds)
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 ```js
 const title = document.createElement('p')
@@ -113,14 +115,15 @@ title.className = 'title'
 title.textContent = 'text inside paragraph tag'
 title.style.background = 'purple'
 
-document.appendChild(title)
+const placeIWantToPutText = document.querySelector('#content')
+placeIWantToPutText.appendChild(title)
 ```
 
 ## Update something in an already existing HTML tag
 ```js
 const element = document.querySelector('#weather')
-element.innerText = 'new text'
-element.className = 'header'
+element.innerText = 'Sunny'
+element.className = 'weather-status'
 ```
 
 # Exercise

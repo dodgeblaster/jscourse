@@ -74,7 +74,7 @@ myArray[1] // will return 'two' because its at the index of 1
     - returns part of the array, alters the original 
     
 
-## Exercises
+## Exercises #1 working with arrays
 - Make a function that takes a list (of strings), and adds an item, and returns the updated list
 ```js
 const exampleList = [
@@ -109,6 +109,56 @@ function removeFromBeginningOfList(list) {
 
 }
 ```
+
+## Exercises #2 with Objects 
+- Make a function that takes a studentObject and a name, and returns the student with the name:
+```js
+const john = {
+    name: 'Henry',
+    country: false,
+    email: false
+}
+
+function updateName(student, name) {
+    // do something
+}
+
+const updatedStudent = updateName(student, 'John')
+console.log(updatedStudent)
+```
+
+- Make a function that takes a studentObject, and a country, and returns a student with an updated country
+```js
+const john = {
+    name: 'John',
+    country: false,
+    email: false
+}
+
+function updateCountry(student, name) {
+    // do something
+}
+
+const updatedStudent = updateCountry(student, 'John')
+console.log(updatedStudent)
+```
+
+- Make a function that taks a studentObject, and an email, and returns a student with an updated email
+```js
+const john = {
+    name: 'John',
+    country: 'CDN',
+    email: false
+}
+
+function updateEmail(student, name) {
+    // do something
+}
+
+const updatedStudent = updateEmail(student, 'John')
+console.log(updatedStudent)
+```
+
 # Array Methods
 - findIndex (good for arrays with complex data types, AKA objects
 ```js

@@ -295,7 +295,7 @@ function chooseRandomTeam(teams) {
 -   make a 'createPlayer' function . It should take a string (name of player), and returns the following object with a random team assigned and a random id:
 ```js
 const exampleOfTeamObject = {
-  id: 'random id from the generateId function
+  id: 'random id from the generateId function'
   name: 'Name of Player',
   score: 0,
   team: 'random team from the chooseRandomTeam function.'

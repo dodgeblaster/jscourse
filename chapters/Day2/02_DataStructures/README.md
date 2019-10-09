@@ -243,8 +243,8 @@ const purchases = [
 ]
 
 const indexOfWalmart = purchases.findIndex(function(item){
-    return item.name === 'WALMART' // returns 1
-})
+    return item.name === 'WALMART' 
+}) // returns 1
 
 purchases[indexOfWalmart].spent = 110
 // because indexOfWalmart ends up being 1, this is the same as:

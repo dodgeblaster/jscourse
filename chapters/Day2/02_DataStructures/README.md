@@ -100,6 +100,28 @@ const user = [
 
 ```
 
+#### Referencing a single item in an array
+```js
+const purchases = [
+    {
+        name: 'WALMART',
+        spent: 100
+    },
+    {
+        name: 'CANADIAN TIRE',
+        spent: 60
+    },
+    {
+        name: 'STABUCKS',
+        spent: 6
+    }
+]
+
+const result1 = purchases[0] // this will be the first item
+const result2 = purchases[1] // this will be the second item
+const result3 = purchases[2] // this will be the third item
+```
+
 #### Good example of practical use for Array methods
 ```js
 let todoList = [];
@@ -153,6 +175,84 @@ Object.keys(obj) // will return an array of all the keys
 const personFromDatabase = {name: "Faraji", age: 23}
 const {name} = personFromDatabase
 ```
+
+#### Examples of how we can take data from an object with forEach and add up a total
+add up the total of something
+```js
+const purchases = [
+    {
+        name: 'WALMART',
+        spent: 100
+    },
+    {
+        name: 'CANADIAN TIRE',
+        spent: 60
+    },
+    {
+        name: 'STABUCKS',
+        spent: 6
+    }
+]
+
+let total = 0
+purchases.forEach(function(item){
+    total = total + item.spent
+})
+
+// arrow function alternative
+let total = 0
+purchases.forEach(item => {
+    total = total + item.spent
+})
+
+```
+
+#### Example of how to find an item in an array and update a value
+```js
+const purchases = [
+    {
+        name: 'WALMART',
+        spent: 100
+    },
+    {
+        name: 'CANADIAN TIRE',
+        spent: 60
+    },
+    {
+        name: 'STABUCKS',
+        spent: 6
+    }
+]
+
+const indexOfWalmart = purchases.findIndex(function(item){
+    return item.name === 'WALMART' // returns 1
+})
+
+purchases[indexOfWalmart].spent = 110
+// because indexOfWalmart ends up being 1, this is the same as:
+purchases[1].spent = 110
+
+```
+
+### Example of a function returning an object
+```js
+function makeTodoItem(nameOfTodo) {
+    return {
+        name: nameOfTodo,
+        done: false
+    }
+}
+
+// arrow function alternative
+const makeTodoItem = nameOfTodo => {
+    return {
+        name: nameOfTodo,
+        done: false
+    }
+}
+
+```
+
 
 ## Chapter Exercises
 

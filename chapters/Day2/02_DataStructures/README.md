@@ -158,15 +158,33 @@ const {name} = personFromDatabase
 
 - make a function called 'generateId'. It should take no arguments and return a string. Hint: Math.random might be helpful here. Click [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for MDN's docs on Math.random
 
+```js
+function generatedId() {
+    // should return something like: 123454245
+}
+
+```
+
 - make a function called 'chooseRandomTeam'. It should take an array of strings and return a string.
+```js
+function chooseRandomTeam(teams) {
+    // should tak an array of strings like ['red team', 'blue team', 'yellow team']
+    // and return 1 team randomly. Math.random might help with this as well
+}
+
+```
 
 -   make a 'createPlayer' function . It should take a string (name of player), and returns the following object with a random team assigned and a random id:
 ```js
-{
+const exampleOfTeamObject = {
   id: 'random id from the generateId function
   name: 'Name of Player',
   score: 0,
   team: 'random team from the chooseRandomTeam function.'
+}
+
+function createPlayer(name) {
+    // return an object in the format of exampleOfTeamObject
 }
 ```
 
@@ -175,7 +193,7 @@ const {name} = personFromDatabase
 
 ```js
 
-// Before:
+// listOfPlayers before function call :
 const listOfPlayers = [
     {
         id: 123456,
@@ -191,10 +209,7 @@ const listOfPlayers = [
     }
 ]
 
-// call function
-const updatedPlayerList = add10Points(listOfPlayers, 'Jane')
-
-// After:
+// listOfPlayers after function call:
 const listOfPlayers = [
     {
         id: 123456,
@@ -209,7 +224,19 @@ const listOfPlayers = [
         team: 'red'
     }
 ]
+
+
+function add10Points(listOfPlayers, player) {
+    // return an updated list of players with 10 points added to which ever player is mentioned
+}
 ```
 
 - make a function called getTeamsOverallScore. It should take an array of players and a team name. It should return a number of the total score of all players on that team. (if all team members have zero points, then it should return zero).
+```js
+
+function getTeamsOverallScore(listOfPlayers, team) {
+    // should return a total score of all the players scores that are on that team
+}
+
+```
 

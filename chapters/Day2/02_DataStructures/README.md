@@ -68,12 +68,20 @@ myArray[1] // will return 'two' because its at the index of 1
 ```
 - findIndex (good for arrays with complet data types, aka objects
 ```js
-const result = [{name: 'one'},{name: 'two'},{name: 'three'},{name: 'four'}].findIndex(function(x) {
+
+const myArray = [
+    {name: 'one'},
+    {name: 'two'},
+    {name: 'three'},
+    {name: 'four'}
+]
+
+const result = myArray.findIndex(function(x) {
     return x.name === 'two'
 }) // will return 1
 
 // arrow function alternative
-const result = ['one','two','three','four'].findIndex(x => x.name === 'two') // will return 1
+const result = myArray.findIndex(x => x.name === 'two') // will return 1
 ```
 
 -   slice

@@ -359,6 +359,8 @@ const makeTodoItem = nameOfTodo => {
 
 ```
 
+## Netflix Developers course on array methods
+[Course Link](https://egghead.io/lessons/rxjs-the-array-foreach-method)
 
 ## Chapter Exercises
 
@@ -394,7 +396,9 @@ function createPlayer(name) {
 }
 ```
 
--   make a function called add10Points. It should take an array of players, and the name of the person you want to add 10 points to. It should return a new array with the updated score. Example:
+-   make a function called add10Points. It should take an array of players, and the name of the person you want to add 10 points to. It should return a new array with the updated score. 
+(Hint, use findIndex to find the person you want to update)
+Example:
 
 
 ```js

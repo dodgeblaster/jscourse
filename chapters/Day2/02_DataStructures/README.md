@@ -66,6 +66,16 @@ myArray.indexOf(2) // 2 being that value in the array
 // returns 1, which is the index
 myArray[1] // will return 2 because its at the index of 1
 ```
+- findIndex
+```js
+const result = [1,2,3,4].findIndex(function(x) {
+    return x === 2
+})
+
+// arrow function alternative
+const result = [1,2,3,4].findIndex(x => x === 2)
+```
+
 -   slice
     - [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
     - returns part of the array, doesnt alter the original

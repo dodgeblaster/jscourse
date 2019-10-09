@@ -57,3 +57,35 @@ var alsoHobbies = document.getElementsByClassName('hobby');
 var firstHobby = document.querySelector('ul li.hobby');
 var againAlsoHobbies = document.querySelectorAll('ul li.hobby');
 ```
+
+## Getting sizes of things
+Get the size of an element
+```js
+const x = document.getElementById('element-id')
+const height = x.offsetHeight
+const width = x.offsetWidth
+```
+
+Get space inside an element (good for divs)
+```js
+const x = document.getElementById('element-id')
+const height = x.clientHeight
+const width = x.clientWidth
+```
+
+Get lots of position data on an element:
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
+```js
+const x = document.getElementById('element-id')
+const lostOfPositionData = x.getBoundingClientRect()
+```
+
+Get the Page vertical scroll position with pageYOffset
+```js
+const verticalPosition = window.pageYOffset
+```
+Get the Page horizontal scroll position with pageYOffset
+```js
+const horizontalPosition = window.pageYOffset
+```
+

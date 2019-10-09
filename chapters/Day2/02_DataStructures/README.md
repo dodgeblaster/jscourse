@@ -66,7 +66,7 @@ myArray.indexOf('two') // 2 being that value in the array
 // returns 1, which is the index
 myArray[1] // will return 'two' because its at the index of 1
 ```
-- findIndex (good for arrays with complet data types, aka objects
+- findIndex (good for arrays with complex data types, AKA objects
 ```js
 
 const myArray = [

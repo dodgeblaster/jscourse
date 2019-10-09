@@ -61,19 +61,19 @@ myArray.unshift(1)
 ```
 -   indexOf
 ```js
-const myArray = [1,2,3,4]
-myArray.indexOf(2) // 2 being that value in the array
+const myArray = ['one','two','three','four']
+myArray.indexOf('two') // 2 being that value in the array
 // returns 1, which is the index
-myArray[1] // will return 2 because its at the index of 1
+myArray[1] // will return 'two' because its at the index of 1
 ```
 - findIndex
 ```js
-const result = [1,2,3,4].findIndex(function(x) {
+const result = ['one','two','three','four'].findIndex(function(x) {
     return x === 2
-})
+}) // will return 1
 
 // arrow function alternative
-const result = [1,2,3,4].findIndex(x => x === 2)
+const result = ['one','two','three','four'].findIndex(x => x === 2) // will return 1
 ```
 
 -   slice

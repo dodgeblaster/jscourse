@@ -20,20 +20,20 @@ It allows you to access and manipulate the DOM of the current web page:
   ## DOM Access Methods
 Finding DOM nodes by id:
 ```js
-document.getElementById(id);
+document.getElementById(id)
 ```
 Finding DOM nodes by tag name:
 ```js
-document.getElementsByTagName(tagName);
+document.getElementsByTagName(tagName)
 ```
 Finding DOM nodes by class name:
 ```js
-document.getElementsByClassName(className);
+document.getElementsByClassName(className)
 ```
 Finding DOM nodes by query selector:
 ```js
-document.querySelector(cssQuery);
-document.querySelectorAll(cssQuery);
+document.querySelector(cssQuery)
+document.querySelectorAll(cssQuery)
 ```
 
 ## Selecting Nodes From the DOM
@@ -45,17 +45,17 @@ document.querySelectorAll(cssQuery);
 ```
 ```js
 // By Id
-var hobbiesList = document.getElementById('hobby-list');
+const hobbiesList = document.getElementById('hobby-list')
 
 // By Tag Name
-var hobbies = document.getElementsByTagName('li');
+const hobbies = document.getElementsByTagName('li')
 
 // By Class Name
-var alsoHobbies = document.getElementsByClassName('hobby');
+const alsoHobbies = document.getElementsByClassName('hobby')
 
 // By CSS Query
-var firstHobby = document.querySelector('ul li.hobby');
-var againAlsoHobbies = document.querySelectorAll('ul li.hobby');
+const firstHobby = document.querySelector('ul li.hobby')
+const againAlsoHobbies = document.querySelectorAll('ul li.hobby')
 ```
 
 ## Getting sizes of things

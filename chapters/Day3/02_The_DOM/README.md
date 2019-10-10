@@ -126,6 +126,31 @@ element.innerText = 'Sunny'
 element.className = 'weather-status'
 ```
 
+## Demo
+
+index.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src='./app.js'></script>
+</html>
+```
+app.js:
+```js
+const stocks = [
+    { symbol: 'XFX', price: 240, volume: 2333 },
+    { symbol: 'TNZ', price: 332, volume: 234 },
+    { symbol: 'JXL', price: 120, volume: 5345 }
+]
+
+```
+
 # Exercise
 - do the mountain exercise
 - do the getElementsByTagName exercise

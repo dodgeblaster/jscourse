@@ -226,3 +226,60 @@ const stocks = [
 - do the mountain exercise
 - do the getElementsByTagName exercise
 - ** DO NOT do the cat animation exercise **
+
+
+## Helpful Example
+
+```js
+const data = [
+    {
+        name: 'john',
+        score: 3
+    },
+    {
+        name: 'james',
+        score: 3
+    },
+    {
+        name: 'jessica',
+        score: 3
+    }
+]
+
+function createTd(text) {
+    const td = document.createElement('td')
+    td.textContent = text
+    return td
+}
+
+function createTr() {
+  const tr = document.createElement('tr')
+    return tr
+} 
+
+function createRow(data) {
+  const tr = createTr()
+  const name = createTd(data.name)
+  const score = createTd(data.score)
+  tr.appendChild(name)
+  tr.appendChild(score)
+  return tr
+}
+
+function createTable(arrayOfData) {
+  const table = document.createElement('table')
+
+  arrayOfData.forEach(function(rowData) {
+    const row = createRow(rowData)
+    table.appendChild(row)
+  })
+
+  return table
+}
+
+const generatedTable = createTable(data)
+document.body.appendChild(generatedTable)
+
+
+
+```

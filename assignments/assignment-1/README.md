@@ -32,6 +32,6 @@ I will be asking the following questions
 -   Do the tiles match the data in the javascript file
 -   Did your solution use a loop?
 -   Did you use variables
--   Did you keep your code shallow (did you stay under 2 nested levels)
+-   Did you keep your code shallow (did you stay under 3 nested levels)
 
 

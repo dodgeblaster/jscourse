@@ -46,5 +46,61 @@ Scroll Event Example
 </script>
 ```
 
+
+### Launch Missles Example Completed
+```html
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            .switch {
+                background: grey;
+                height: 100px;
+                width: 100px;
+                transition: 0.2s;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .success {
+                background: green;
+                transform: translateX(100px);
+            }
+
+            .canceled {
+                background: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="switch" class="switch"></div>
+        <div class="switch"></div>
+        <button id="launch-missles">Launch</button>
+        <button id="stop-missles">Stop!!!</button>
+    </body>
+    <script>
+        const launchButton = document.querySelector('#launch-missles')
+        const stopButton = document.querySelector('#stop-missles')
+
+        const switchToggle = document.querySelector('#switch')
+        launchButton.addEventListener('click', function() {
+            console.log('LAUNCHED!')
+            switchToggle.className = 'switch success'
+        })
+
+        stopButton.addEventListener('click', function() {
+            console.log('STOP!')
+            switchToggle.className = 'switch canceled'
+        })
+    </script>
+</html>
+
+```
+
 ## Mobile Menu Explanation Starter Files
 - [starter files](https://htmlbasicsresources.s3.amazonaws.com/event-click-starterfiles.zip)

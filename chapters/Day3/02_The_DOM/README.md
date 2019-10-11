@@ -283,3 +283,6 @@ document.body.appendChild(generatedTable)
 
 
 ```
+
+## Netlfix demo starter files
+- [Starter files](https://htmlbasicsresources.s3.amazonaws.com/netflix-demo.zip)

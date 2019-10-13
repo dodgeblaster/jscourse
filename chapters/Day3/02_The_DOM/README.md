@@ -197,30 +197,6 @@ referenceToNewElement.remove()
 
 ```
 
-## Demo
-
-index.html
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
-</body>
-<script type="text/javascript" src='./app.js'></script>
-</html>
-```
-app.js:
-```js
-const stocks = [
-    { symbol: 'XFX', price: 240, volume: 2333 },
-    { symbol: 'TNZ', price: 332, volume: 234 },
-    { symbol: 'JXL', price: 120, volume: 5345 }
-]
-
-```
 
 # Exercise
 - do the mountain exercise
@@ -282,6 +258,106 @@ document.body.appendChild(generatedTable)
 
 
 
+```
+
+## Exercise Answer
+HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id='app'></div>
+</body>
+<script type="text/javascript" src='./app.js'></script>
+</html>
+```
+
+```js
+const data = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+]
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+// Make DOM Nodes
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+function makeThDomNode(text) {
+    const th = document.createElement('th')
+    th.textContent = text
+    return th
+}
+
+function makeTrDomNode() {
+    const tr = document.createElement('tr')
+    return tr
+}
+
+function makeTdDomNode(text) {
+    const td = document.createElement('td')
+    td.textContent = text
+    return td
+}
+
+function makeTableDomNode() {
+    const table = document.createElement('table')
+    return table
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+// Make Table Rows
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+function makeTableHeader() {
+    const tr = makeTrDomNode()
+    const nameTitle = makeThDomNode('name')
+    const heightTitle = makeThDomNode('height')
+    const placeTitle = makeThDomNode('place')
+    tr.appendChild(nameTitle)
+    tr.appendChild(heightTitle)
+    tr.appendChild(placeTitle)
+    return tr
+}
+
+function makeTableRow(mountainData) {
+    const tr = makeTrDomNode()
+    const name = makeTdDomNode(mountainData.name)
+    const height = makeTdDomNode(mountainData.height)
+    const place = makeTdDomNode(mountainData.place)
+    tr.appendChild(name)
+    tr.appendChild(height)
+    tr.appendChild(place)
+    return tr
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+// Make Table
+// - - - - - - - - - - - - - - - - - - - - - - - - 
+function makeTable(arrayOfMountData){
+    const table = makeTableDomNode()
+    const tableHeader = makeTableHeader()
+    table.appendChild(tableHeader)
+
+    arrayOfMountData.forEach(function(data) {
+        const row = makeTableRow(data)
+        table.appendChild(row)
+    })
+
+    return table
+}
+
+const table = makeTable(data)
+const app = document.querySelector('#app')
+app.appendChild(table)
 ```
 
 ## Netlfix demo starter files

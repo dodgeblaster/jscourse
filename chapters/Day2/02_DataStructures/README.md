@@ -450,3 +450,71 @@ function getTeamsOverallScore(listOfPlayers, team) {
 
 ```
 
+# Exercise Answer
+```js
+function generateId() {
+     const randomNumber = Math.random() * 1000000
+     return Math.floor(randomNumber)
+}
+
+function chooseRandomTeam(teams) {
+    const randomIndex =  Math.floor(Math.random() * teams.length)
+    return teams[randomIndex]
+}
+
+function createPlayer(name) {
+    const teams = ['blue', 'red', 'yellow', 'orange']
+    return {
+      id: generateId(),
+      name: name,
+      score: 0,
+      team: chooseRandomTeam(teams)
+    }
+}
+
+function add10Points(listOfPlayers, name) {
+    const index = listOfPlayers.findIndex(function(player) {
+        return player.name === name
+    })
+
+    listOfPlayers[index].score += 10
+    return listOfPlayers
+}
+
+function getTeamsOverallScore(listOfPlayers, team) {
+    let total = 0
+    listOfPlayers.forEach(function(player){
+        if (player.team === team) {
+            total += player.score
+        }
+    })
+    return total
+}
+
+
+function main() {
+    const players = [
+        createPlayer('John'),
+        createPlayer('James'),
+        createPlayer('Jessica'),
+        createPlayer('Jane')
+    ]
+
+    add10Points(players, 'Jane')
+    add10Points(players, 'Jessica')
+    add10Points(players, 'John')
+    add10Points(players, 'Jessica')
+
+    const blueScore = getTeamsOverallScore(players, 'blue')
+    const redScore = getTeamsOverallScore(players, 'red')
+    const yellowScore = getTeamsOverallScore(players, 'yellow')
+
+    console.log('BLUE SCORE - ', blueScore)
+    console.log('RED SCORE - ', redScore)
+    console.log('YELLOW SCORE - ', yellowScore)
+}
+
+main()
+
+```
+

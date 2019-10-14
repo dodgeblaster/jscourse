@@ -162,11 +162,47 @@ const result = {
 }
 
 ```
-# Exercise 1
+## Exercise 1
 Use the star wars api to get a planets data by using fetch. Use the Starwars API documentation if you are unsure how to access a planets data. [Starwars API site](https://swapi.co/). `console.log` the following information:
 ```
 Name: Planet Name
 Population: Number
 Climate: Climate Description
 Diameter: Number
+```
+
+
+# 2. What to do when something in your request goes wrong
+So many things can go wrong with a network call. 
+- we could put in the wrong url
+- there could be an issue with a users network
+- the user may not have permission to view what they are requesting
+- the item the user is requesting could not exist
+- there could be an error that happens on the server
+
+Up until now, we have been writing our own javascript, and if there were any problems, it was on us to fix it. Network calls are different in that you are interacting with something you have no control over. You are interacting with someone elses code on a server. If there is an error on their end, you cant do anything about it. Making an api call also involves a user to use a network that you have no control over. They may be on a train which started in a location where they had data, but eventually enters a zone where there is no data.
+
+Because there are so many things that could go wrong, most of which is out of our control, we must handle those errors gracefully. Promises in general, and fetch specically have the another function to chain onto the `then`s called catch. First lets look at what happens when we dont handle the error gracefully:
+
+```js
+const url = 'https://swapi.co/api/PURPOSELY-WRONG-REQUEST'
+
+fetch(url).then(x => {
+  return x.json()
+}).then(x => {
+  console.log('success!')
+})
+```
+
+Now, lets add a catch on the end, to be explicit as to what we will do when things go wrong:
+```js
+const url = 'https://swapi.co/api/PURPOSELY-WRONG-REQUEST'
+
+fetch(url).then(x => {
+  return x.json()
+}).then(x => {
+  console.log('success!')
+}).catch(err => {
+  console.log('I am sorry, the starwars data is not available right now :(')
+})
 ```

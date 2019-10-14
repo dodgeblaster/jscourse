@@ -97,3 +97,68 @@ fetch(url)
     console.log('x')
   })
 ```
+
+For good documentation, visit [MDN - Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+The fetch function will return a Response Object, which is explain in detail on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Response). An example of a response:
+
+```js
+const responseObject = {
+  body: ReadableStream, // this needs to be parsed before being able to be read in js. Usually done with the `json' method.
+  bodyUsed: false,
+  headers: [], 
+  ok: true 
+  redirected: true
+  status: 200
+  statusText: ""
+  type: "cors"
+  url: "https://swapi.co/api/people/1/"
+}
+```
+
+The most common thing to do with this object is to get the body and pass it along to a second then, which we can see in this example:
+```js
+const url = 'https://swapi.co/api/people/1'
+fetch(url)
+  .then(x => x.json())
+  .then(x => {
+    console.log('x')
+  })
+```
+
+Once the body is parsed with the json method, we get a nicely formatted object that looks like this:
+```js
+const result = {
+	"name": "Luke Skywalker",
+	"height": "172",
+	"mass": "77",
+	"hair_color": "blond",
+	"skin_color": "fair",
+	"eye_color": "blue",
+	"birth_year": "19BBY",
+	"gender": "male",
+	"homeworld": "https://swapi.co/api/planets/1/",
+	"films": [
+		"https://swapi.co/api/films/2/",
+		"https://swapi.co/api/films/6/",
+		"https://swapi.co/api/films/3/",
+		"https://swapi.co/api/films/1/",
+		"https://swapi.co/api/films/7/"
+	],
+	"species": [
+		"https://swapi.co/api/species/1/"
+	],
+	"vehicles": [
+		"https://swapi.co/api/vehicles/14/",
+		"https://swapi.co/api/vehicles/30/"
+	],
+	"starships": [
+		"https://swapi.co/api/starships/12/",
+		"https://swapi.co/api/starships/22/"
+	],
+	"created": "2014-12-09T13:50:51.644000Z",
+	"edited": "2014-12-20T21:17:56.891000Z",
+	"url": "https://swapi.co/api/people/1/"
+}
+
+```

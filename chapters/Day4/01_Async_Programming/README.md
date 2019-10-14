@@ -86,7 +86,8 @@ makeExpensiveDrink()
 ```
 
 ## window.fetch
-The way we do this in javascript is by using the fetch function:
+The fetch function is a promise, meaning if you execute this function, the only way to get the result of it is
+by attaching a `then` to it. Here is an example:
 
 ```js
 const url = 'https://www.myserver.com/api/cats'

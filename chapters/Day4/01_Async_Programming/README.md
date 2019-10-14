@@ -234,3 +234,7 @@ fetch(url).then(x => {
   return x.json()
 })
 ```
+
+
+# What to do while you are waiting for the data to come back from the server
+You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.

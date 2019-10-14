@@ -276,8 +276,8 @@ fetch(url).then(x => {
 
 # Final Exercise for Async Programming
 Using the Pokemon API, get a list of pokemon and display them on a page. Do this by:
-- accessing this api endpoing: `https://pokeapi.co/api/v2/pokedex/1`
-- make a function that makes html elements (could be a simple `<li>` DOM Node for this example).
-- On successful retreival, loop thru the data (probably with `forEach`) and append them to the page.
+- accessing this api endpoint: `https://pokeapi.co/api/v2/pokedex/1`
+- make a `Obj -> HtmlElement` function that makes html elements (could be a simple `<li>` DOM Node for this example) out of an object.
+- On successful retreival, loop thru the data (probably with `forEach`), make each object into an html element by using the `Obj -> HtmlElement` function you made previously, and attach them to the page.
 
 [Link to the Pokemon API](https://pokeapi.co/)

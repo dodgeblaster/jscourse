@@ -20,11 +20,9 @@ Async programming is like a starbucks. Here is how buying something at Starbucks
 Its 2 people doing 2 jobs at the same time. One is handling a customer with their order and payment, the other person
 is making the drink while thats happening.
 
-In a js perspective, we have our main script, which is like the person at the cash register. Thats the main task. But
+In Javacript, we have our main script, which is like the person at the cash register. Thats the main task. But
 in our script we may ask for some data from a server, that is like asking a barista to make a drink. Its a second task
 that needs to be done while the first task is running.
-
-
 
 ## Making a promise in Javascript
 There is a built in function in the browser called fetch. Fetch takes the format of a promise. In order to understand fetch, we first need to understand promises, how they work, and how to build them.

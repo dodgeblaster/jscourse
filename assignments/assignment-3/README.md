@@ -46,7 +46,7 @@ We always under estimate how long something will take. Its important to determin
 - If I had all the time in the world, what would I ideally want to make
 - What is the MVP (minumum viable product)
 
-Ideal and MVP are not different things, but different stages on the same project. Make sure to get the MVP done first. Reasons:
+Ideal and MVP are not different projects, but different stages on the same project. Make sure to get the MVP done first. Reasons:
 - If you get the MVP done before the deadline, you will have zero stress making it better (ui, design, added features), because all the requirements are met
 - If you get the MVP done just in time, you will be really happy you didnt waste any time on non essential features.
 

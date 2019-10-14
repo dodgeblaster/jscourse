@@ -206,3 +206,31 @@ fetch(url).then(x => {
   console.log('I am sorry, the starwars data is not available right now :(')
 })
 ```
+
+## Exercise 2
+Using the code below, do the following:
+- using the valid url to make a successful request, and using the helper function `writeToPage` to display some data on the page
+- using the invalidUrl, handle the error and display a message on the page using `writeToPage` letting the user know there was
+an issue getting the data.
+```js
+const writeToPage = text => {
+  const el = document.createElement('div')
+  el.style = `
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+  `
+  el.textContent = text
+  document.body.appendChild(el)
+}
+
+const url = 'https://swapi.co/api/people/1'
+const invalidUrl = 'https://swapi.co/api/NOT-VALID'
+
+fetch(url).then(x => {
+  return x.json()
+})
+```

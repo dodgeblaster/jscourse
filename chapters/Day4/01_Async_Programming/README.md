@@ -10,16 +10,12 @@ I encourage you to look into the other 2 methods. Learning all 3 all at once is,
 focus on promises for this course, look into the other methods later on once you are comfortable with promises.
 
 ## What is async programming?
-Async programming is like a starbucks. Here is how buying something st Starbucks works:
+Async programming is like a starbucks. Here is how buying something at Starbucks works:
 - Go to the cash register
-- Say what I want
-- Someone else hears that and starts working on my drink
+- Tell them my order
+- A barista hears my order and starts working on my drink
 - I pay the person at the cash register
-- then I move over to another line to wait for my drink, while someone else talks to the cash register
-
-My interaction with the person at the cash register is like a js script running from top to bottom. But the part
-where someone is making my drink is another workflow happening while I am paying for my drink. The barista making
-my drink is like an async request.
+- then I move over to another line to wait for my drink, while someone else gives their order
 
 Its 2 people doing 2 jobs at the same time. One is handling a customer with their order and payment, the other person
 is making the drink while thats happening.

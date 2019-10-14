@@ -60,15 +60,15 @@ inside a `then`, you can add another `then`, like this:
 makeExpensiveDrink()
   .then(function(result) {
     console.log(result)
-    retun result.name
+    return result.name
   })
   .then(function(name) {
     writeResultToDOM(name)
-    retun name
+    return name
   })
   .then(function(name) {
     saveResultToDB(name)
-    retun name
+    return name
   })
 
 ```

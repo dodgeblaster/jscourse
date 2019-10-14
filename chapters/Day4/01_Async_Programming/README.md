@@ -58,6 +58,39 @@ makeExpensiveDrink()
 console.log('customer pays for drink')
 ```
 
+'then' is how we define what we want to do once the promise is done its task. If you return something from the function
+inside a then statement, you can add another then, like this:
+
+```js
+
+makeExpensiveDrink()
+  .then(function(result) {
+    console.log(result)
+    retun result.name
+  })
+  .then(function(name) {
+    writeResultToDOM(name)
+    retun name
+  })
+  .then(function(name) {
+    saveResultToDB(name)
+    retun name
+  })
+
+```
+
+The example above is simply demonstrating how you can seperate multiple actions into different 'then's. Alternativly, 
+you could simply perform all this logic in one then:
+
+```js
+makeExpensiveDrink()
+  .then(function(result) {
+    console.log(result)
+    writeResultToDOM(result.name)
+    saveResultToDB(result.name)
+  })
+```
+
 ## window.fetch
 The way we do this in javascript is by using the fetch function:
 

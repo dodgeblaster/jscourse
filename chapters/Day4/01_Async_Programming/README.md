@@ -238,3 +238,38 @@ fetch(url).then(x => {
 
 # What to do while you are waiting for the data to come back from the server
 You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.
+
+## Exercise #3
+Instead of having a blank screen, we will write to the page right away with a loading message. 
+Once the api call comes back successfully or with an error, update the display using the `updateDisplay` helper function
+
+```js
+const writeToPage = text => {
+  const el = document.createElement('div')
+  el.id = 'display'
+  el.style = `
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+  `
+  el.textContent = text
+  document.body.appendChild(el)
+}
+
+const url = 'https://swapi.co/api/people/1414'
+
+function updateDisplay (text) {
+  const el = document.querySelector('#display')  
+  el.textContent = text
+}
+
+writeToPage('Loading...')
+
+fetch(url).then(x => {
+  return x.json()
+})
+
+```

@@ -53,7 +53,7 @@ console.log('customer pays for drink')
 ```
 
 'then' is how we define what we want to do once the promise is done its task. If you return something from the function
-inside a then statement, you can add another then, like this:
+inside a `then`, you can add another `then`, like this:
 
 ```js
 

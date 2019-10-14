@@ -163,7 +163,7 @@ const result = {
 
 ```
 # Exercise 1
-Use the star wars api, get a planets data by using fetch. Use the Starwars API documentation if you are unsure how to access a planets data. [Starwars API site](https://swapi.co/). `console.log` the following information:
+Use the star wars api to get a planets data by using fetch. Use the Starwars API documentation if you are unsure how to access a planets data. [Starwars API site](https://swapi.co/). `console.log` the following information:
 ```
 Name: Planet Name
 Population: Number

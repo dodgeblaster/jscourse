@@ -90,7 +90,7 @@ The fetch function is a promise, meaning if you execute this function, the only 
 by attaching a `then` to it. Here is an example:
 
 ```js
-const url = 'https://www.myserver.com/api/cats'
+const url = 'https://swapi.co/api/people/1'
 fetch(url)
   .then(x => x.json())
   .then(x => {

@@ -213,7 +213,7 @@ Using the code below, do the following:
 - using the invalidUrl, handle the error and display a message on the page using `writeToPage` letting the user know there was
 an issue getting the data.
 ```js
-const writeToPage = text => {
+function writeToPage(text) {
   const el = document.createElement('div')
   el.style = `
     padding: 20px 40px;
@@ -240,11 +240,11 @@ fetch(url).then(x => {
 You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.
 
 ## Exercise #3
-Instead of having a blank screen, we will write to the page right away with a loading message. 
+Instead of having a blank screen, we will write to the page right away with a loading message (alternatively, we could just literally write loading in the html file without any javascript as an initial state).
 Once the api call comes back successfully or with an error, update the display using the `updateDisplay` helper function
 
 ```js
-const writeToPage = text => {
+function writeToPage(text) {
   const el = document.createElement('div')
   el.id = 'display'
   el.style = `
@@ -259,12 +259,12 @@ const writeToPage = text => {
   document.body.appendChild(el)
 }
 
-const url = 'https://swapi.co/api/people/1414'
-
 function updateDisplay (text) {
   const el = document.querySelector('#display')  
   el.textContent = text
 }
+
+const url = 'https://swapi.co/api/people/1'
 
 writeToPage('Loading...')
 

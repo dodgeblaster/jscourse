@@ -14,6 +14,7 @@ employeers in an interview.
 
 ### Places to get data
 - [Starwars API](https://swapi.co/)
+- [Weather API](https://darksky.net/dev)
 - [Pokedex API](https://pokeapi.co/)
 - [List of Public API's (may require API Keys)](https://public-apis.xyz/)
 - Any other source you come across
@@ -23,6 +24,9 @@ employeers in an interview.
     - Use a news api (from public apis) to fetch news stories and display
       them on a page. Have categories at the top, which when clicked, will
       filter the news stories to that category.
+- Weather App
+    - Using the Dark Sky Weather API, get the current weather for Calgary and display it on the page.
+    - Have buttons representing cities (Edmonton, Vancouver, etc.), when clicked, gets the weather for that city
 
 - Starwars Dashboard
     - Make a dashboard that has a list of characters. When you click 

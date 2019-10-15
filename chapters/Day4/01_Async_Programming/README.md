@@ -43,7 +43,7 @@ while you are still in the middle of yours. Here is an example of how that might
 ```js
 
 console.log('Get customers order')
-makeExpensiveDrink()
+makeExpensiveDrink
   .then(function(result) {
     console.log(result)
   })
@@ -56,7 +56,7 @@ inside a `then`, you can add another `then`, like this:
 
 ```js
 
-makeExpensiveDrink()
+makeExpensiveDrink
   .then(function(result) {
     console.log(result)
     return result.name
@@ -172,6 +172,9 @@ Diameter: Number
 
 
 # 2. What to do when something in your request goes wrong
+
+- [MDN documetation on status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
 So many things can go wrong with a network call. 
 - we could put in the wrong url
 - there could be an issue with a users network

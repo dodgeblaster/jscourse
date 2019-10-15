@@ -55,5 +55,10 @@ Ideal and MVP are not different projects, but different stages on the same proje
 - If you get the MVP done just in time, you will be really happy you didnt waste any time on non essential features.
 
 
+### Where to find inspiration for design
+Once you decide what kind of data you want to work with (Food, News, Weather), I would search for it on ta design site, for example:
+- [Dribbble](https://dribbble.com/)
+- [UpLabs](https://www.uplabs.com/)
+- [Adobe Behance](https://www.behance.net/)
 
 

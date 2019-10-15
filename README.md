@@ -24,6 +24,9 @@ This is an introduction course to javascript.
 ### About your instructor
 Gary Jennings is a Fullstack Developer at CNK Tech. He graduated from SAIT's Fast Track Program in 2015, and has worked as a frontend dev, backend dev, Devops engineer in the last 4 years. Gary is familiar with Javascript frontend frameworks such as React JS and Vue JS, and is familiar with writing node js with the Serverless Framework on AWS.
 
+### Where to email your assignments
+garyfromsait@gmail.com
+
 ### TextBooks
 We have one, and its available online for free:
 [Eloquent Javascript](https://eloquentjavascript.net/)

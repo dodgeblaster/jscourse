@@ -6,8 +6,7 @@ There are 3 ways in which you can do asyn programming in Javascript:
 - async / await
 
 We are going to focus only on promises. Once you are familiar with how async programming works in general using promises,
-I encourage you to look into the other 2 methods. Learning all 3 all at once is, in my opinion, a bit insane. So we will 
-focus on promises for this course, look into the other methods later on once you are comfortable with promises.
+I encourage you to look into the other 2 methods.
 
 ## What is async programming?
 Async programming is like a starbucks. Here is how buying something at Starbucks works:

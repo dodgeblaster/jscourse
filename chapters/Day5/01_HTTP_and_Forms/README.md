@@ -6,6 +6,8 @@ or anything that requires the user to stay on the same page, we need to submit f
 For this, we send data behind in the scenes in our javascript using fetch.
 
 ```js
+const url = 'https://now-server.orangeman.now.sh/api/form1'
+
 const apiData = {
     method: 'POST',
     body: JSON.stringify({
@@ -13,7 +15,7 @@ const apiData = {
         comment:'my comment' 
     })
 }
-fetch(getUrl, apiData)
+fetch(url, apiData)
     .then(x =>  x.json())
     .then(x => {
       console.log(x)

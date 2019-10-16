@@ -55,7 +55,8 @@ const url = 'https://now-server.orangeman.now.sh/api/form1'
 const apiData = {
     method: 'POST',
     body: JSON.stringify({
-        name: 'gary',
+        name: 'john',
+        email: 'john@eaxmple.com',
         comment:'my comment' 
     })
 }
@@ -76,6 +77,7 @@ const getUrl = 'https://now-server.orangeman.now.sh/api/form1'
 const apiData = {
     method: 'POST',
     body: JSON.stringify({
+        name: 'john',
         comment:'my comment' 
     })
 }

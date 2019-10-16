@@ -97,6 +97,23 @@ fetch(getUrl, apiData)
 ```
 
 
+
+## Exercise #1
+Make a similar POST call with fetch as above, but instead hit the following url:
+```bash
+https://now-server.orangeman.now.sh/api/tweet
+```
+Posting to this endpoint requires that your data looks like the following:
+```js
+const data = {
+    twitterHandle: 'string',
+    tweet: 'string'
+}
+
+```
+
+On success, console.log the result
+
 ## Using Inputs to fill out data and send to a server
 HTML
 ```html

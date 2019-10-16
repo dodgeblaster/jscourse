@@ -19,13 +19,11 @@ In this example, the color in the dog object is referencing something defined so
 But when it comes time to take an object and send it over a network, (example, frontend taking an object, and sending it to a server', we dont want all the complicated connections. We just want to send the literal value of the object. So instead, we send a big string that looks like this:
 
 ```js
-`
-{
+const jsonString = '{
   "legs": "4",
   "color": "brown"
-}
+}'
 
-`
 ```
 
 This is much simpler to send over a network, its just a big string. Once its sent over the network to a server, its up to the server to `parse` that back into an object. There are functions that make an object a JSON string, and functions that can convert it from a string back into an object. Here is an example:

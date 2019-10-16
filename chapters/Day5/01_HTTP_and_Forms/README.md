@@ -99,11 +99,11 @@ fetch(getUrl, apiData)
 
 
 ## Exercise #1
-Make a similar POST call with fetch as above, but instead hit the following url:
+Make a similar POST call with the `fetch` function as is done in the example above, but instead target the following endpoint:
 ```bash
 https://now-server.orangeman.now.sh/api/tweet
 ```
-Posting to this endpoint requires that your data looks like the following:
+Posting to this endpoint requires that your data looks like this:
 ```js
 const data = {
     twitterHandle: 'string',

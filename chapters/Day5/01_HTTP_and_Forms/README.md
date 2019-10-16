@@ -119,7 +119,7 @@ HTML
 ```
 JS
 ```js
-const sendComment = (comment) => {
+function sendComment(comment) {
     const getUrl = 'https://now-server.orangeman.now.sh/api/form1'
     return fetch(getUrl, {
         method: 'POST',

@@ -123,11 +123,11 @@ HTML
     <title></title>
 </head>
 <body>
-    <div id='form-status'></div>
     <form>
         <label for='name'>Name</label>
         <input id='name' name='name'>
         <button type='submit' id='submit'>Submit</button>
+        <div id='form-status'></div>
     </form>
 </body>
 <script type="text/javascript" src='./app.js'></script>
@@ -173,3 +173,93 @@ sub.addEventListener('click', x => {
 - Using the form code above, add an `email` and `comment` input to the html. Update the js so it takes the values from `email` and `comment` and submits it to the server (this will involve updating the function parameters). You should see all 3 input values `console.log`'d after it has successfully posted.
 - Add submitting text into the `form-status` div while the post is being submitted so users know something is happening, remove it once the post is done.
 
+## Validation
+When someone has filled out input fields to submit to a server, where should we validate it, ont eh frontend or on the server? The answer is both, and you do it for different reasons.
+You validate on your server for security reasons. As long as your server validates input, you are safe. So why also validate on the front end? For a good user experience. You want to give your user feedback as soon as possible.
+
+Here is an example form for filling out a blog post:
+
+HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form>
+        <label for='title'>Title</label>
+        <input type="text" name="title" id='title'>
+        <br/>
+
+        <label for='author'>Author</label>
+        <input type="text" name="author" id='author'>
+        <br/>
+
+        <label for='body'>Body</label>
+        <textarea name="body" id='body'></textarea>
+        <br/>
+
+        <button type='submit' id='submit'>Submit</button>
+        <div id='form-status'></div>
+    </form>
+
+</body>
+<script type="text/javascript" src='./app.js'></script>
+</html>
+```
+
+JS
+```js
+const saveBlogPost = (blog) => {
+    const getUrl = 'https://now-server.orangeman.now.sh/api/blog'
+    return fetch(getUrl, {
+        method: 'POST',
+        body: JSON.stringify({
+            title: blog.title,
+            author: blog.author,
+            blogBody: blog.body
+        })
+    })
+    .then(x => x.json())
+    .then(x => {
+        if (x.error) {
+            throw x.error
+        }
+         
+        console.log(x)
+        
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+
+const title = document.querySelector('#title')
+const author = document.querySelector('#author')
+const body = document.querySelector('#body')
+const sub = document.querySelector('#submit')
+
+sub.addEventListener('click', x => {
+    x.preventDefault()
+
+    // ... write validation here before saving blog post
+    
+    saveBlogPost({
+        title: title.value,
+        author: author.value,
+        body: body.value
+    })
+})
+```
+
+What we can do is first do a bit of validation in the submit button event listener. If any of our validation fails, we
+can update the styles for that input to have a red border `example: element.style.borderColor = 'red'` and return so the function does not continue to save the blogPost.
+
+Alternatively, you can add a `.error` css class that you define in a css file if things go wrong. You will also want to make sure to style it back to normal if the user later puts valid input into the field. If statements should do the trick here.
+
+## Exercise #3
+Add validation to the blogPost example above which will:
+- highlight the input border red if its invalid
+- display a message in the form status div telling the user which input is not correct
+- For this example, invalid means a field that does not have any text

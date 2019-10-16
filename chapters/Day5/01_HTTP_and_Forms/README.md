@@ -263,3 +263,10 @@ Add validation to the blogPost example above which will:
 - highlight the input border red if its invalid
 - display a message in the form status div telling the user which input is not correct
 - For this example, invalid means a field that does not have any text
+
+## Exercise #4 (building on exercise #3)
+When a user submits any kind of form (a tweet, a post, a comment, or a blog), once its submitted, the form is usually reset. If you were to press enter on your chat input, and your message stayed there even though it successfully went thru, it would be confusing. So we want to make sure we clear everything once the post is successful.
+
+For this exercise, add a cleanup phase once everthing has correctly been submitted, which will:
+- set all inputs values to empty strings
+- temporarily add success to the form status div, and have it dissappear after 5 seconds (hint: use `setTimeout`)

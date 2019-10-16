@@ -164,7 +164,10 @@ const name = document.querySelector('#name')
 const sub = document.querySelector('#submit')
 
 sub.addEventListener('click', x => {
-    x.preventDefault()
+    x.preventDefault() // we must prevent default, so we dont try to either reload this page or go to a different page
     sendComment(name.value)
 })
 ```
+
+## Exercise #2
+Using the form code above, add an email and comment input to the html, and update the js so it takes the values from email and comment as well and submits it. You should see all 3 input values `console.log`'d after it has successfully posted.

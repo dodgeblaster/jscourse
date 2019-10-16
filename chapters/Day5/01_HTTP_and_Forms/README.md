@@ -19,10 +19,10 @@ In this example, the color in the dog object is referencing something defined so
 But when it comes time to take an object and send it over a network, (example, frontend taking an object, and sending it to a server', we dont want all the complicated connections. We just want to send the literal value of the object. So instead, we send a big string that looks like this:
 
 ```js
-const jsonString = '{
+const jsonString = `{
   "legs": "4",
   "color": "brown"
-}'
+}`
 
 ```
 

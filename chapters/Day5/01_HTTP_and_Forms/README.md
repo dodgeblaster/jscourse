@@ -170,4 +170,6 @@ sub.addEventListener('click', x => {
 ```
 
 ## Exercise #2
-Using the form code above, add an email and comment input to the html, and update the js so it takes the values from email and comment as well and submits it. You should see all 3 input values `console.log`'d after it has successfully posted.
+- Using the form code above, add an email and comment input to the html, and update the js so it takes the values from email and comment as well and submits it. You should see all 3 input values `console.log`'d after it has successfully posted.
+- Add submitting text into the `form-status` div while the post is being submitted so users know something is happening, remove it once the post is done.
+

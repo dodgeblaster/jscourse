@@ -137,5 +137,5 @@ Create an invoice object that has the following:
 - setTotal: a function that updates total using this and 1 input
 - getTotal: a function that console.lots total using this
 
-test out your object methods by setting and getting both values
-console.log the result to confirm it is work as expected
+test out your object methods by setting and getting both values,
+console.log the results to confirm it is work as expected

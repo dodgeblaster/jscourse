@@ -156,7 +156,8 @@ const myList = []
 We can create our own base objects, and create further objects off of our base object:
 ```js
 const Dog = {
-    bark: () => console.log('Bark!!'),
+    type: 'dog',
+    bark: () => console.log('Hi!! I am a ' + this.type),
     play: () => console.log('Chasing ball!')
 }
 
@@ -173,7 +174,7 @@ We can create a constructor function (a function that creates new objects) like 
 function Dog(type) {
   this.type = type;
 }
-Dog.prototype.speak = () => console.log('Bark!!')
+Dog.prototype.speak = () => console.log('Hi!! I am a ' + this.type)
 Dog.prototype.play = () => console.log('Chasing ball!!')
 
 let germanSheppard = new Dog("German Sheppard")
@@ -194,8 +195,7 @@ invoice.getTotal()
 The above works great, but ES6 introduced a nicer way to accomplish the same thing using `classes` You will notice
 that in a class, we do not set properties like before (anything other than a function). Instead we set all the properties
 in the constructor by putting `this.myValue = 42`.
-##### !!! Important Note !!!
-##### Notice how there are no commas after each method. This is different from normal objects.
+##### !!! Important Note !!! Notice how there are no commas after each method. This is different from normal objects.
 
 ```js
 class Dog {
@@ -204,7 +204,7 @@ class Dog {
   }
 
   speak(line) {
-    console.log(`Bark!`)
+    console.log('Hi!! I am a ' + this.type)
   }
 
   play(line) {
@@ -215,3 +215,7 @@ class Dog {
 const germanSheppard = new Dog("German Sheppard")
 germanSheppard.speak()
 ```
+
+## Exercise #3 (building off of Excerise #2)
+Convert our constructor function from excerise #2 into a class. Test the methods like before to confirm everything works
+as expected.

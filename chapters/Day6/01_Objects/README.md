@@ -177,7 +177,7 @@ Dog.prototype.speak = () => console.log('Bark!!')
 Dog.prototype.play = () => console.log('Chasing ball!!')
 
 let germanSheppard = new Dog("German Sheppard")
-germanSheppard.bark()
+germanSheppard.speak()
 ```
 Making the function capitalized is a convention which tells us this is a function that creates a new instance of an object.
 In our case above, we are creating a new dog.
@@ -188,4 +188,30 @@ invoice by calling:
 ```js
 invoice.setTotal(6)
 invoice.getTotal()
+```
+
+## ES6 Classes
+The above works great, but ES6 introduced a nicer way to accomplish the same thing using `classes` You will notice
+that in a class, we do not set properties like before (anything other than a function). Instead we set all the properties
+in the constructor by putting `this.myValue = 42`.
+##### !!! Important Note !!!
+##### Notice how there are no commas after each method. This is different from normal objects.
+
+```js
+class Dog {
+  constructor(type) {
+    this.type = type
+  }
+
+  speak(line) {
+    console.log(`Bark!`)
+  }
+
+  play(line) {
+    console.log(`Chasing ball!`)
+  }
+}
+
+const germanSheppard = new Dog("German Sheppard")
+germanSheppard.speak()
 ```

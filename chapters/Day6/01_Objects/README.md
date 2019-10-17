@@ -222,7 +222,7 @@ as expected.
 
 
 ## Final Exercise
-Below is the start of a calculator using a class. Currently, only the `1, 2, +, equals` buttons work. Finish hooking up all the buttons and adding the neccissary methods to the class to make the calculator work correctly. It should:
+Below is the start of a calculator using a class. Currently, only the `1, 2, +, equals` buttons work. Finish hooking up all the buttons and adding the necessary methods to the class to make the calculator work correctly. It should:
 - be able to add, subtract and build an equation involving multiple operators (example: 1 + 123 - 12 + 5253 - 1)
 - should be able to remove the last number or operator typed
 - should be able to clear the screen and start a new equation

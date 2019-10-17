@@ -219,3 +219,151 @@ germanSheppard.speak()
 ## Exercise #3 (building off of Excerise #2)
 Convert our constructor function from excerise #2 into a class. Test the methods like before to confirm everything works
 as expected.
+
+
+## Final Exercise
+Below is the start of a calculator using a class. Currently, only the `1, 2, +, equals` buttons work. Finish hooking up all the buttons and adding the neccissary methods to the class to make the calculator work correctly. It should:
+- be able to add, subtract and build an equation involving multiple operators (example: 1 + 123 - 12 + 5253 - 1)
+- should be able to remove the last number or operator typed
+- should be able to clear the screen and start a new equation
+- (optional) add multiply and divide
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+
+        <style>
+            .page {
+                background: #e3e3e3;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container {
+                width: 200px;
+                background: #567;
+            }
+
+            #screen {
+                height: 100px;
+                width: 100%;
+                background: #334;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            button {
+                flex: 1;
+                border: 1px solid black;
+                background: #345;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+            }
+        </style>
+    </head>
+
+    <body class="page">
+        <div class="container">
+            <div id="screen"></div>
+            <div class="row">
+                <button id="b7">7</button>
+                <button id="b8">8</button>
+                <button id="b9">9</button>
+            </div>
+
+            <div class="row">
+                <button id="b4">4</button>
+                <button id="b5">5</button>
+                <button id="b6">6</button>
+            </div>
+
+            <div class="row">
+                <button id="b1">1</button>
+                <button id="b2">2</button>
+                <button id="b3">3</button>
+            </div>
+
+            <div class="row">
+                <button id="b0">0</button>
+                <button id="add">+</button>
+                <button id="minus">-</button>
+            </div>
+
+            <div class="row">
+                <button id="equals">=</button>
+                <button id="remove">remove</button>
+                <button id="clear">clear</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const on = (el, f) =>
+            document.getElementById(el).addEventListener('click', f)
+
+        const updateScreen = x =>
+            document.getElementById('screen').innerHTML = x
+
+        class Calculator {
+            constructor() {
+                this.result = 0
+                this.working = ''
+            }
+
+            addToWorking(value) {
+                this.working = this.working + value
+            }
+
+            calculate() {
+                const result = eval(this.working)
+                this.result = result
+            }
+
+            renderResult() {
+                updateScreen(this.result || 0)
+            }
+
+            renderWorking() {
+                updateScreen(this.working || 0)
+            }
+        }
+
+        const blueCalculator = new Calculator()
+
+        on('b1', () => {
+            blueCalculator.addToWorking(1)
+            blueCalculator.renderWorking()
+        })
+
+        on('b2', () => {
+            blueCalculator.addToWorking(2)
+            blueCalculator.renderWorking()
+        })
+
+        on('add', () => {
+            blueCalculator.addToWorking('+')
+            blueCalculator.renderWorking()
+        })
+
+         on('equals', () => {
+            blueCalculator.calculate()
+            blueCalculator.renderResult()
+        })
+    </script>
+</html>
+```

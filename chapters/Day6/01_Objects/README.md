@@ -137,5 +137,55 @@ Create an invoice object that has the following:
 - setTotal: a function that updates total using this and 1 input
 - getTotal: a function that console.lots total using this
 
-test out your object methods by setting and getting both values,
-console.log the results to confirm it is work as expected
+test out your object methods by setting and getting both values, example:
+```js
+invoice.setTotal(6)
+invoice.getTotal()
+```
+
+## Prototypes
+Everything in javascript is an object. And all objects have a prototype, or an object they inherit from. Lets look at the prototype for:
+
+```js
+const obj = {}
+const word = 'hello'
+const score = 123
+const myList = []
+```
+
+We can create our own base objects, and create further objects off of our base object:
+```js
+const Dog = {
+    bark: () => console.log('Bark!!'),
+    play: () => console.log('Chasing ball!')
+}
+
+const germanSheppard = Object.create(Dog)
+// IN CONSOLE: check prototype
+germanSheppard.bark()
+// IN CONSOLE: check Object.getPrototypeOf(GermanSheppard)
+```
+This is great because now all new dogs we make will have bark and play as methods automatically because their
+base class is Dog. 
+
+We can create a constructor function (a function that creates new objects) like so:
+```js
+function Dog(type) {
+  this.type = type;
+}
+Dog.prototype.speak = () => console.log('Bark!!')
+Dog.prototype.play = () => console.log('Chasing ball!!')
+
+let germanSheppard = new Dog("German Sheppard")
+germanSheppard.bark()
+```
+Making the function capitalized is a convention which tells us this is a function that creates a new instance of an object.
+In our case above, we are creating a new dog.
+
+## Exercise #2 (building off of Excerise #1)
+Take the invoice object you made in exercise #1 and make a constructor function which will create new invoices. Test the
+invoice by calling:
+```js
+invoice.setTotal(6)
+invoice.getTotal()
+```

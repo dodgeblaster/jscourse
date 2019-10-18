@@ -117,6 +117,45 @@ stocks
     .forEach(logResult)
 ```
 
+Notes Finsihed
+```js
+const stocks = [
+    { symbol: 'XFX', price: 240, volume: 2333 },
+    { symbol: 'TNZ', price: 332, volume: 234 },
+    { symbol: 'JXL', price: 120, volume: 5345 }
+]
+
+// Map
+const getSymbol = x => x.symbol
+const getPrice = x => x.price
+// Filter
+const above = amount => x => x.price > amount
+
+const aboveBrokenOut = function(amount) {
+    return function(x) {
+        return x.price > amount
+    }
+}
+
+// IO
+const logResult = x => console.log(x)
+const addTileToHTML = x => {
+    const text = document.createElement('p')
+    text.textContent = x
+    document.body.appendChild(text)
+}
+const saveToServer = x => {
+    const url = 'https://www.example-server.com'
+    const config = { method: 'POST', body: JSON.stringify(x) }
+    return fetch(url, config)
+}
+
+stocks
+    .filter(above(200))
+    .map(getSymbol)
+    .forEach(addTileToHTML)
+```
+
 
 #### chaining
 -   how all these functions can be chained

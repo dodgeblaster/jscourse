@@ -35,6 +35,23 @@ console.log(percentages)
 - work thru exercises
 
 
+forEach Soltion
+```js
+// arrow function
+const addTitle = x => {
+    addLine(x.title)
+}
+
+// oneline arrow function
+const addTitleShort = x => addLine(x.title)
+
+movieData.forEach(function(x) {
+    addLine(x.title)
+})
+
+
+```
+
 #### map
 
 Starting Point

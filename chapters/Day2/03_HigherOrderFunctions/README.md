@@ -1,21 +1,14 @@
 # Higher Order Functions
 
-## Basic Intro (Demonstration)
-
--   Why do we need higher order functions?
-
-## Chapter concepts overview (Demonstration)
-
-#### function composition
-Greater Than Example
+## Data for demonstrations
 ```js
-function greaterThan(n) {
-  return m => m > n;
-}
-let greaterThan10 = greaterThan(10);
-console.log(greaterThan10(11));
+const scores = [7, 4, 5, 6, 2, 1, 3, 5, 6, 7]
+const stocks = [
+    { symbol: 'XFX', price: 240, volume: 2333 },
+    { symbol: 'TNZ', price: 332, volume: 234 },
+    { symbol: 'JXL', price: 120, volume: 5345 }
+]
 ```
-
 
 #### forEach
 -   demonstrate to use forEach

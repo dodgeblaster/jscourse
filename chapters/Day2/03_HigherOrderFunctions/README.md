@@ -34,13 +34,39 @@ console.log(percentages)
 -   demonstrate to use forEach
 - work thru exercises
 
+
+#### map
+
+Starting Point
+```js
+// Example 1
+const scores = [7, 4, 5, 6, 2, 1, 3, 5, 6, 7]
+
+const percentages = []
+scores.forEach(x => {
+    const percent = (x / 7) * 100
+    percentages.push(percent)
+})
+console.log(percentages)
+
+// Example 2
+const stocks = [
+    { symbol: 'XFX', price: 240, volume: 2333 },
+    { symbol: 'TNZ', price: 332, volume: 234 },
+    { symbol: 'JXL', price: 120, volume: 5345 }
+]
+
+const symbols = []
+stocks.forEach(x => {
+    symbols.push(x.symbol)
+})
+console.log(symbols)
+```
+
 #### filter
 -   demonstrate to use filter
 - work thru exercises
 
-#### map
--   demonstrate to use map
-- work thru exercises
 
 #### chaining
 -   how all these functions can be chained

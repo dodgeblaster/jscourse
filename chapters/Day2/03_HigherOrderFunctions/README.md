@@ -100,8 +100,22 @@ addedScores.forEach(function(x) {
 ```
 
 #### filter
--   demonstrate to use filter
-- work thru exercises
+Starting Point
+```js
+const stocks = [
+    { symbol: 'XFX', price: 240, volume: 2333 },
+    { symbol: 'TNZ', price: 332, volume: 234 },
+    { symbol: 'JXL', price: 120, volume: 5345 }
+]
+
+const getSymbol = x => x.symbol
+const getPrice = x => x.price
+const logResult = x => console.log(x)
+
+stocks
+    .map(getPrice)
+    .forEach(logResult)
+```
 
 
 #### chaining

@@ -80,6 +80,25 @@ stocks.forEach(x => {
 console.log(symbols)
 ```
 
+NOTES
+```js
+const scores = [7, 4, 5, 6, 2, 1, 3, 5, 6, 7]
+
+const addedScores = scores.map(function(x) {
+    return x + 2
+})
+// original array stays the same
+scores.forEach(function(x) {
+    console.log(x)
+})
+
+console.log('-----')
+// map creates a brand new array
+addedScores.forEach(function(x) {
+    console.log(x)
+})
+```
+
 #### filter
 -   demonstrate to use filter
 - work thru exercises

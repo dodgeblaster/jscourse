@@ -13,6 +13,23 @@ const stocks = [
 ]
 ```
 
+
+Demo Starting Point
+```js
+const scores = [7, 4, 5, 6, 2, 1, 3, 5, 6, 7]
+
+
+// SOLUTION 1
+const percentages = []
+for (let index = 0; index < scores.length; index++) {
+    const percent = (scores[index] / 7) * 100
+    percentages.push(percent)
+}
+
+console.log(percentages)
+
+```
+
 #### forEach
 -   demonstrate to use forEach
 - work thru exercises

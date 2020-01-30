@@ -116,6 +116,7 @@ for (movie of movieData) {
 - If the movie title has the word `Pride` and `Prejudice` and `Zombies` in it, console.log `movieTitle - 10/10`
 
 (hint: there should be no duplicates in the result, there should be a total of 23 results)
+(hint: googling `js string includes` might help)
 
 #### Exercise 4
 - If the movie has Benedict Cumberbatch in it, console.log `movieTitle - 8/10`

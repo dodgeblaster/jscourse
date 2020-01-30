@@ -98,7 +98,7 @@ const myNavigationList = [
 const myShoppingList = [
   'Bananas',
   'Apples',
-  'Oranges
+  'Oranges'
 ]
 
 const myProductList = [
@@ -196,8 +196,48 @@ for (player of players) {
     console.log(player.score + ' points')
 }
 ```
-## Chapter Exercises (In Class Work)
 
+## Simple List Exercises
+
+#### Exercise 1
+```js
+const todoList = [
+  'Workout',
+  'Buy Groceries',
+  'Respond to Emails',
+  'Water Plants'
+]
+
+```
+Loop through the todo list above and console.log `listItem - DONE`
+
+#### Exercise 2
+```js
+const todoList = [
+  { 
+    name: 'Workout',
+    done: true
+  },
+  { 
+    name: 'Buy Groceries',
+    done: true
+  },
+  { 
+    name: 'Respond to Emails',
+    done: false
+  },
+  { 
+    name: 'Water Plants',
+    done: false
+  }
+]
+
+```
+Loop through the todo list above and console.log `listItem - DONE` if the done property is true,
+otherwise, just console.log the item
+
+
+## Movie Database Exercises
 
 - [Movie Data JS File](https://htmlbasicsresources.s3.amazonaws.com/movieData.js)
 

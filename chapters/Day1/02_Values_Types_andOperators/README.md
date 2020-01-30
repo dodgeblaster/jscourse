@@ -109,9 +109,9 @@ console.log(color)
 
 ```
 
-# Exercise 1
-Create a timesheet app, where the user is prompted for the hours they worked each day of this week (Mon - Fri).
-Once the user submits the hours, `console.log` the total hours worked.
+# Exercise 1 - Workout Tracker
+Create a workout tracker app, where the user is prompted for the hours minutes they spent running (Mon - Fri).
+Once the user submits the minutes, `console.log` the total amount of time working out.
 
 
 
@@ -127,13 +127,14 @@ if (color !== 'blue') {
 if (color === 'blue') {
   console.log('Your right')
 }
-
 ```
 
+## Exercise 2 - The Sorting Hat
 
-## Chapter Exercises (In Class Work)
+Make an app that asks the user what their favourite color and animal is.
+If the answers match the below table, `console.log` the House they belong to.
+If they dont match, default to Hufflepuff.
 
-Download exercise files and make a sorting hat app using if statements.
 For those who have never read Harry Potter, here is the answer key:
 
 | House      | Color  | Animal |

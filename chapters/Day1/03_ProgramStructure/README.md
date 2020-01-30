@@ -265,6 +265,8 @@ Use this as a starter for your index.html file:
 </html>
 ```
 
+To start working with the data in movieData.js, we can reference movieData as a variable in our app.js file. The reason we can reference this variable is because we defined that movieData variable in the first js file (which you downloaded), and that variable is available to you in the app.js file.
+
 #### Exercise 1
 - `console.log` all movies in 1919
 

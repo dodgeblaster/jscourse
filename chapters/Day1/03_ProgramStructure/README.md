@@ -233,8 +233,8 @@ const todoList = [
 ]
 
 ```
-Loop through the todo list above and console.log `listItem - DONE` if the done property is true,
-otherwise, just console.log the item
+Loop through the todo list above and console.log `listItemName - DONE` if the done property is true,
+otherwise, just console.log the listItemName
 
 
 ## Movie Database Exercises

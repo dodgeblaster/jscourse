@@ -2,9 +2,9 @@
 
 ## Basic Intro (Demonstration)
 
--   talk about expressions generally
--   values about expressions generally
--   operators about expressions generally
+-   expressions
+-   values and expressions
+-   operators and expressions
 
 ## Read Chapter (In Class Reading)
 

@@ -1,4 +1,4 @@
-# 1. Values, Types, and Operators
+# 2. Values, Types, and Operators
 
 ## Basic Intro (Demonstration)
 

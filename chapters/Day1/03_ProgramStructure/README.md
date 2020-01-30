@@ -91,16 +91,41 @@ let number = 1
 number++ // this is now 2
 ```
 
+##### Looping over data
+```js
+for (movie of movieData) {
+    console.log(movie.title)
+}
+```
+
 ## Chapter Exercises (In Class Work)
+
 
 FIZZBIZZ
 if Robert Downy Jr good
 if Cumberbatch great
 if both Amazing
 
--   chessboard (from book)
-give array of players with scores
-add up all scores and display players score
-also add up all scores and display teams score
+- [Movie Data JS File](https://htmlbasicsresources.s3.amazonaws.com/movieData.js)
+
+#### Exercise 1
+- `console.log` all movies in 1919
+
+#### Exercise 2
+`console.log` the number of movies in 1919
+
+#### Exercise 3
+if the movie title has the word `Prejudice` in it, console.log `movieTitle is terrible`
+if the movie title has the word `Pride` in it, console.log `movieTitle is ok`
+if the movie title has the word `Pride` and `Prejudice` in it, console.log `movieTitle is good`
+if the movie title has the word `Pride` and `Prejudice` and `Zombies` in it, console.log `movieTitle is the best`
+
+(hint: there should be no duplicates in the result, there should be a total of 23 results)
+
+#### Exercise 4
+If the movie has Benedict Cumberbatch in it, console.log `movieTitle - 8/10`
+If the movie has Robert Downey in it, console.log `movieTitle - 9/10`
+If the movie has Robert Downey and Benedict Cumberbatch in it, console.log `movieTitle - 10/10`
+(hint: there should be a total of 61 results)
 
 

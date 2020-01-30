@@ -76,14 +76,15 @@ const isHappyWithWeather = false
 ```
 
 ## variables vs values
-values are the things or material of your program
-variables are names or assignments pointing to a value
-Think of a wire connecting a variable to a value, example:
+Values are the things or material of your program.
+Variables are names or assignments pointing to a value.
+Think of a variable as a name that has a wire connecting it to a value.
+Example:
 ```
 let myCar = 'Kia Forte'
 myCar = 'Honda Civic'
 ```
-This makes sense, because its possible that for me to get a new car.
+Its possible that yesterday my car was a forte, and today my car is a civic. Both the Forte and the Civic still exist, but my car is no longer referring to the still existing Forte, it is now referring to the Civic.
 
 ## Grouping related things together
 ```js

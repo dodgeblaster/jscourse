@@ -6,13 +6,6 @@
 -   values and expressions
 -   operators and expressions
 
-## Read Chapter (In Class Reading)
-
--   Read chapter in 30 minutes
-
-## Chapter concepts overview (Demonstration)
-
-
 ## Values
 - Number
 - String

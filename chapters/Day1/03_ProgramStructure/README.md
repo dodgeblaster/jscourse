@@ -244,7 +244,7 @@ otherwise, just console.log the item
 #### Exercise 1
 - `console.log` all movies in 1919
 
-(hint: if you are just trying to see what 1 item looks like, you can reference the first item of an array liek this: `myList[0]`)
+(hint: if you are just trying to see what 1 item looks like, you can reference the first item of an array like this: `myList[0]`)
 
 #### Exercise 2
 - `console.log` the number of movies in 1919

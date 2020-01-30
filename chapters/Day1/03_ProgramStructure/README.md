@@ -239,7 +239,7 @@ otherwise, just console.log the listItemName
 
 ## Movie Database Exercises
 Download the MovieDatabase js file
-- [Movie Data JS File](https://htmlbasicsresources.s3.amazonaws.com/movieData.js)
+- [Movie Data JS File](https://htmlbasicsresources.s3.amazonaws.com/movieData.js.zip)
 
 Include this js file in a project with the following folder structure:
 ```

@@ -76,7 +76,7 @@ while (number <= 12) {
 
 ##### For Loops
 ```js
-for (let number = 0; number <= 10; number = number++) {
+for (let number = 0; number <= 10; number++) {
   console.log(number);
 }
 ```

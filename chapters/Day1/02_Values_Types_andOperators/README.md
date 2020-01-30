@@ -1,6 +1,6 @@
 # 2. Values, Types, and Operators
 
-## Basic Intro (Demonstration)
+## Intro
 
 -   expressions
 -   values and expressions
@@ -109,9 +109,9 @@ console.log(color)
 
 ```
 
-# Exercise 1 - Workout Tracker
-Create a workout tracker app, where the user is prompted for the hours minutes they spent running (Mon - Fri).
-Once the user submits the minutes, `console.log` the total amount of time working out.
+# Exercise 1 - TimeTracker
+Create a time tracker app, where the user is prompted for the hours they worked (Mon - Fri).
+Once the user submits the hours, `console.log` the total amount of hours worked.
 
 
 
@@ -132,7 +132,7 @@ if (color === 'blue') {
 ## Exercise 2 - The Sorting Hat
 
 Make an app that asks the user what their favourite color and animal is.
-If the answers match the below table, `console.log` the House they belong to.
+If the answers match a house from Hogwarts, `console.log` the House they belong to.
 If they dont match, default to Hufflepuff.
 
 For those who have never read Harry Potter, here is the answer key:

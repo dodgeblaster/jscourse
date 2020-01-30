@@ -33,9 +33,6 @@ if (something) {
   // otherwise, always do this thing
 }
 ```
--   Advice: make sure to keep complexity low
--   Advice: nesting if statements is not great
-- Advice: 'If, If else, If else, else' is complicated from a business logic perspective. Might be fine if its a low level technical function.
 
 ```js
 // Example if, if else, else scenario:

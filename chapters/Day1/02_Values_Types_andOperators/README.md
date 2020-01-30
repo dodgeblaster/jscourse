@@ -46,18 +46,17 @@ typeof
 
 ```js
 (true && false && true)
-// with ANDS, any false value makes it all false
-// the above has 1 false, there for its all false
+// with ANDS, any false value makes the whole expression false
+// the above has 1 false, therefore the whoel expression false
 
 (true && true && true)
-// the above has 0 false, therefore its all true
+// the above has 0 false, therefore the whole expression is true
 
 (true || false || true)
-// with ORS, any true statement makes this whole thing true
+// with ORS, any true statement makes the whole expression true
 
 (false || false || false)
-// the above has no true, therefore the whole thing is false
-
+// the above has no true, therefore the whole expression is false
 ```
 
 ## Assignment with variables

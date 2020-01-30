@@ -151,7 +151,7 @@ const myProjectListForMyPortfolio = [
   {
     name: 'ScoreBoard App',
     img: 'https://my-portfolio-assets.s3.amazonaws.com/img3/png',
-    githubUrl: 'https://github.project2.com'
+    githubUrl: 'https://github.project3.com'
   }
 ]
 
@@ -238,8 +238,32 @@ otherwise, just console.log the item
 
 
 ## Movie Database Exercises
-
+Download the MovieDatabase js file
 - [Movie Data JS File](https://htmlbasicsresources.s3.amazonaws.com/movieData.js)
+
+Include this js file in a project with the following folder structure:
+```
+index.html
+movieData.js
+app.js
+```
+
+Use this as a starter for your index.html file:
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="./movieData.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
+```
 
 #### Exercise 1
 - `console.log` all movies in 1919

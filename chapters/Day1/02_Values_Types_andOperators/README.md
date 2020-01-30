@@ -109,7 +109,7 @@ We recognize this sort of structure because we deal with computer folders all th
 IO usually means input and output. If we had no input or output, our code would have no connection to the real world and be useless. We need some sort of IO to get started with coding js, so we will start with the following:
 ```js
 // INPUT
-let color = prompt('what is your favourite color?')
+const color = prompt('what is your favourite color?')
 
 // OUTPUT
 console.log(color)
@@ -119,7 +119,7 @@ console.log(color)
 ## If statements
 
 ```js
-let color = prompt('what is the best color?')
+const color = prompt('what is the best color?')
 
 if (color !== 'blue') {
   console.log('Your wrong')

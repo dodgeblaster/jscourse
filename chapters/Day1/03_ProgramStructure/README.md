@@ -93,6 +93,36 @@ for (movie of movieData) {
 }
 ```
 
+Examples of looping over a list
+```js
+let playerScores = [30, 40, 60]
+
+for (score of playerScores) {
+    console.log(score + ' points')
+}
+```
+
+Examples of looping over a list with objects
+```js
+let players = [
+    {
+        name: 'John',
+        score: 30
+    },
+    {
+        name: 'James',
+        score: 40
+    },
+    {
+        name: 'Jessica',
+        score: 60
+    }
+]
+
+for (player of players) {
+    console.log(player.score + ' points')
+}
+```
 ## Chapter Exercises (In Class Work)
 
 

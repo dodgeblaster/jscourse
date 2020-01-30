@@ -110,10 +110,10 @@ for (movie of movieData) {
 - `console.log` the number of movies in 1919
 
 #### Exercise 3
-- If the movie title has the word `Prejudice` in it, console.log `movieTitle is terrible`
-- If the movie title has the word `Pride` in it, console.log `movieTitle is ok`
-- If the movie title has the word `Pride` and `Prejudice` in it, console.log `movieTitle is good`
-- If the movie title has the word `Pride` and `Prejudice` and `Zombies` in it, console.log `movieTitle is the best`
+- If the movie title has the word `Prejudice` in it, console.log `movieTitle - 7/10`
+- If the movie title has the word `Pride` in it, console.log `movieTitle - 8/10`
+- If the movie title has the word `Pride` and `Prejudice` in it, console.log `movieTitle - 9/10`
+- If the movie title has the word `Pride` and `Prejudice` and `Zombies` in it, console.log `movieTitle - 10/10`
 
 (hint: there should be no duplicates in the result, there should be a total of 23 results)
 

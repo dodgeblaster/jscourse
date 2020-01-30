@@ -81,7 +81,7 @@ while (number <= 12) {
 
 ##### For Loops
 ```js
-for (let number = 0; number <= 12; number = number + 2) {
+for (let number = 0; number <= 10; number = number++) {
   console.log(number);
 }
 ```
@@ -91,17 +91,16 @@ let number = 1
 number++ // this is now 2
 ```
 
-##### Breaking out of a loop
-```js
-for (let current = 20; ; current = current + 1) {
-  if (current % 7 == 0) {
-    console.log(current);
-    break;
-  }
-}
-```
-
 ## Chapter Exercises (In Class Work)
 
--   fizzbizz (from book)
+FIZZBIZZ
+if Robert Downy Jr good
+if Cumberbatch great
+if both Amazing
+
 -   chessboard (from book)
+give array of players with scores
+add up all scores and display players score
+also add up all scores and display teams score
+
+

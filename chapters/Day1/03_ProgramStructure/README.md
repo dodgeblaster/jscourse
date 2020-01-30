@@ -5,35 +5,6 @@
 -   just writing expressions is not enough. We need a way to organize our code
 -   we need a way to control the flow of our code, and make decisions
 
-## Read Chapter (In Class Reading)
-
--   Read chapter in 30 minutes
-
-## Chapter concepts overview (Demonstration)
-
-### Giving things names (Variables)
-
--   why variables are good (giving data and procedures names is important, you are identifying intention)
--   comparing variables and expressions (are they the same?) - mention You Don't Know HS for more details
-
-### functions
-
-##### 2 Functions we have seen so far:
-```js
-prompt('the question I want to ask') // Input
-console.log('The message I want to log') // Output
-```
-
-##### Every function also evaluates, and returns a value of some kind:
-```js
-console.log('my message')
-// returns undefined
-
-prompt('my question')
-// returns answer to the question
-```
-
-
 ### Logic - If statements
 
 If:
@@ -96,7 +67,6 @@ switch (prompt("What is the weather like?")) {
     break;
 }
 ```
-
 
 ### Loops - Do While Loops
 ```js

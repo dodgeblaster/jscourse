@@ -1,7 +1,5 @@
 # 3. Program Structure
 
-## Basic Intro (Demonstration)
-
 -   just writing expressions is not enough. We need a way to organize our code
 -   we need a way to control the flow of our code, and make decisions
 

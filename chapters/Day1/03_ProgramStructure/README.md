@@ -86,7 +86,80 @@ let number = 1
 number++ // this is now 2
 ```
 
-##### Looping over data
+
+### Representing data as a list
+```js
+const myNavigationList = [
+  'About',
+  'Services',
+  'Contact us'
+]
+
+const myShoppingList = [
+  'Bananas',
+  'Apples',
+  'Oranges
+]
+
+const myProductList = [
+  'Lite Plan',
+  'Regular Plan',
+  'Pro Plan'
+]
+
+const myProductListWithDetails = [
+  {
+    name: 'Lite Plan',
+    price: 20
+  },
+  {
+    name: 'Regular Plan',
+    price: 40
+  },
+  {
+    name: 'Pro Plan',
+    price: 80
+  }
+]
+
+const myOnlineClothingProducts = [
+  {
+    name: 'Shirt 1',
+    price: 20
+  },
+  {
+    name: 'Shirt 2',
+    price: 40
+  },
+  {
+    name: 'Jeans 1',
+    price: 80
+  }
+]
+
+const myProjectListForMyPortfolio = [
+  {
+    name: 'Blog',
+    img: 'https://my-portfolio-assets.s3.amazonaws.com/img1/png',
+    githubUrl: 'https://github.project1.com'
+  },
+  {
+    name: 'Ecommerce Site',
+    img: 'https://my-portfolio-assets.s3.amazonaws.com/img2/png',
+    githubUrl: 'https://github.project2.com'
+  },
+  {
+    name: 'ScoreBoard App',
+    img: 'https://my-portfolio-assets.s3.amazonaws.com/img3/png',
+    githubUrl: 'https://github.project2.com'
+  }
+]
+
+```
+
+
+
+### Looping - over data
 ```js
 for (movie of movieData) {
     console.log(movie.title)
@@ -130,6 +203,7 @@ for (player of players) {
 
 #### Exercise 1
 - `console.log` all movies in 1919
+(hint: if you are just trying to see what 1 item looks like, you can reference the first item of an array liek this: `myList[0]`)
 
 #### Exercise 2
 - `console.log` the number of movies in 1919

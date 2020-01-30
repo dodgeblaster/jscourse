@@ -109,6 +109,12 @@ console.log(color)
 
 ```
 
+# Exercise 1
+Create a timesheet app, where the user is prompted for the hours they worked each day of this week (Mon - Fri).
+Once the user submits the hours, `console.log` the total hours worked.
+
+
+
 ## If statements
 
 ```js

@@ -22,7 +22,7 @@ const alsoHobbies = document.querySelectorAll('ul li.hobby')
 ```
 
 ## There is a window object in the browser environment
-
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 ```js
 window.document
 ```
@@ -30,6 +30,7 @@ window.document
 ## 2 ways to add things to the DOM
 
 #### innerText
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 ```js
 const placeIWantToPutText = document.querySelector('#content')
 placeIWantToPutText.innerText = `text inside paragraph tag`

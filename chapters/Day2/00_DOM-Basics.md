@@ -47,6 +47,7 @@ placeIWantToPutText.innerHTML = `
 ## Demo innerText with starter project 1
 
 ## Demo innerHTML with starter project 2
+- Discuss html css and js are written together and how html and css work inside a js file
 
 ## Exercise
 This exercise is the 3rd project in the starter projects for this section.

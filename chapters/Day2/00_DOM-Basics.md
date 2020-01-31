@@ -1,6 +1,6 @@
 # The DOM Basics
 
-- [starter projects](https://htmlbasicsresources.s3.amazonaws.com/js-day2-dom.zip)
+- [Download Starter Projects](https://htmlbasicsresources.s3.amazonaws.com/js-day2-dom.zip)
 
 
 # What is the DOM?

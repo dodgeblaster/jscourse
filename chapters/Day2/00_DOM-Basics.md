@@ -21,6 +21,12 @@ const firstHobby = document.querySelector('ul li.hobby')
 const alsoHobbies = document.querySelectorAll('ul li.hobby')
 ```
 
+## There is a window object in the browser environment
+
+```js
+window.document
+```
+
 ## 2 ways to add things to the DOM
 
 #### innerText

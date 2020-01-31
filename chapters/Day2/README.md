@@ -2,23 +2,9 @@
 
 ## Goals
 
-Today, our goal is to make a site that can search for movies from a list of movies
+Today, our goal is to learn about the DOM, functions, and become more comfortable with yesterdays concepts.
 
-## Technical things we need to learn to accomplish are goal
 
-In order to do that, we will need to learn how to create resuable code using:
-
--   functions
-
-And how to deal with complex data using data structures such as:
-
--   arrays
--   objects
-
-And how to operate on those data structres using:
-
--   array methods
--   object methods
 
 ## Schedule
 

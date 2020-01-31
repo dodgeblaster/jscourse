@@ -261,3 +261,11 @@ const functionWithNoSideEffect = x => {
   - takes 2 arguments, a noun and a number.
   - returns the number and pluralized form, like "5 cats" or "1 dog".
 - Call that function for a few different scores and log the result to make sure it works.
+
+
+
+# Revisit DOM projects
+- add functions to 02 movie list
+
+# Exercise
+Make a `buildHTML` function, which takes a player object and returns an html string

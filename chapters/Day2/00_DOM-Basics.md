@@ -43,4 +43,11 @@ placeIWantToPutText.innerText = `text inside paragraph tag`
 const placeIWantToPutText = document.querySelector('#content')
 placeIWantToPutText.innerHTML = `
 <p class='title'>text inside paragraph tag</p>
-`
+```
+## Demo innerText with starter project 1
+
+## Demo innerHTML with starter project 2
+
+## Exercise
+This exercise is the 3rd project in the starter projects for this section.
+After being prompted for hours for all days, the values for Mon - Fri and the total in the correct spot in the HTML

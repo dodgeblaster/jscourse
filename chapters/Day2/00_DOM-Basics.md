@@ -42,13 +42,35 @@ placeIWantToPutText.innerText = `text inside paragraph tag`
 ```js
 const placeIWantToPutText = document.querySelector('#content')
 placeIWantToPutText.innerHTML = `
-<p class='title'>text inside paragraph tag</p>
+  <p class='title'>
+    text inside paragraph tag
+  </p>
+`
 ```
+
+Template laterals (making a string using back ticks) allows us to seperate our string onto different lines
 ## Demo innerText with starter project 1
 
 ## Demo innerHTML with starter project 2
 - Discuss html css and js are written together and how html and css work inside a js file
 
-## Exercise
+## Exercise 1
 This exercise is the 3rd project in the starter projects for this section.
 After being prompted for hours for all days, the values for Mon - Fri and the total in the correct spot in the HTML
+
+## Exercise 2
+This exercise is the 4th project in the starter proejcts for this section.
+
+Step 1:
+
+Loop through all the data and add a player div element to the html that looks like the following:
+```html
+<div class="player">
+    <p>John</p>
+    <p>40pts</p>
+</div>
+```
+(hint: using back ticks to define the string allows us to break the string up onto different lines. It also allows us to add variables into the string a lot easier)
+
+Step 2:
+Once you are able to list all players as player divs in the html, add a `average` css class if their points is below 70, and add a `good` css class if their points are above 70.

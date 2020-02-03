@@ -268,4 +268,6 @@ const functionWithNoSideEffect = x => {
 - add functions to 02 movie list
 
 # Exercise
+- [Exercise Files](https://htmlbasicsresources.s3.amazonaws.com/js-day03-01.zip)
+
 Make a `buildHTML` function, which takes a player object and returns an html string

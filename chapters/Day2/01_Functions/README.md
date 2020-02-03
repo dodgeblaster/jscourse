@@ -271,3 +271,57 @@ const functionWithNoSideEffect = x => {
 - [Exercise Files](https://htmlbasicsresources.s3.amazonaws.com/js-day03-01.zip)
 
 Make a `buildHTML` function, which takes a player object and returns an html string
+
+
+## Answer
+```js
+const players = [
+    {
+        name: 'John',
+        points: 40
+    },
+    {
+        name: 'Jessica',
+        points: 100
+    },
+    {
+        name: 'James',
+        points: 30
+    },
+    {
+        name: 'Jared',
+        points: 80
+    },
+    {
+        name: 'Julie',
+        points: 70
+    }
+]
+
+function determineStyle(player) {
+    let style = 'normal'
+    if (player.points > 70) {
+        style = 'good'
+    }
+    return style
+}
+
+function buildHtml(player, style) {
+    return `
+        <div class="player ${style}">
+            <p>${player.name}</p>
+            <p>${player.points}pts</p>
+        </div>
+    `
+}
+
+let html = ''
+for (player of players) {
+    const style = determineStyle(player)
+    html = html + buildHtml(player, style)
+}
+
+document.querySelector('#leaderboard').innerHTML = html
+
+
+```

@@ -8,26 +8,15 @@ Here are the requirements:
 ### The Purpose of this assignment
 Along with confirming you know how to do the list of requirements above,
 this assignment is purposely open ended so that you have room to build
-something you will want to put on your portfolio in December. As
-you plan what to build, think about what it is you want to show potential
-employeers in an interview.
+something you will want to put on your portfolio. The following API's
+are available as choices:
 
 ### Places to get data
 - [Starwars API](https://swapi.co/)
-- [Weather API](https://darksky.net/dev)
 - [Pokedex API](https://pokeapi.co/)
-- [List of Public API's (may require API Keys)](https://public-apis.xyz/)
-- Any other source you come across
+
 
 ### Here are some ideas:
-- News Site
-    - Use a news api (from public apis) to fetch news stories and display
-      them on a page. Have categories at the top, which when clicked, will
-      filter the news stories to that category.
-- Weather App
-    - Using the Dark Sky Weather API, get the current weather for Calgary and display it on the page.
-    - Have buttons representing cities (Edmonton, Vancouver, etc.), when clicked, gets the weather for that city
-
 - Starwars Dashboard
     - Make a dashboard that has a list of characters. When you click 
       on any of them, you fetch data for that item from the Star wars API
@@ -39,11 +28,6 @@ employeers in an interview.
     - Have categories which when clicked, sort the pokemon by that category.
     - When clicking on any of the pokemon on the main page, you are taken to a second page, where you are given details on that individual pokemon. 
     - Here is an example of how that might work: [Pokedex](https://www.pokemon.com/us/pokedex/)
-
-- Drink Menu
-    - Using one of the drink api's from Public api's, have a page list all the
-      drinks they have recipes for. When you click on any of them, you are taken to another page (or stay on the same page, which ever makes more
-      sense based on your design) that shows how to make that individual drink.
 
 ### Advice
 We always under estimate how long something will take. Its important to determine 2 things while planning your project:

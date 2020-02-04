@@ -110,7 +110,9 @@ function removeFromBeginningOfList(list) {
 }
 ```
 
-## Exercises #2 with Objects 
+
+## Mutating Objects
+Demonstration of changing an object:
 - Make a function that takes a studentObject and a name, and returns the student with the name:
 ```js
 const john = {
@@ -126,7 +128,7 @@ function updateName(student, name) {
 const updatedStudent = updateName(john, 'John')
 console.log(updatedStudent)
 ```
-
+## Exercises #2 with Objects 
 - Make a function that takes a studentObject, and a country, and returns a student with an updated country
 ```js
 const john = {
@@ -160,48 +162,90 @@ console.log(updatedStudent)
 ```
 
 # Array Methods
-- findIndex (good for arrays with complex data types, AKA objects
+There are 3 ways to find an item in an array
+- `myList.indexOf`
+- `myList.findIndex`
+- `myList.find`
+
+#### myList.indexOf
+indexOf will try to find the index of the string or number you give as a parameter"
+```js
+const myArray = ['one','two','three','four']
+myArray.indexOf('two') // 2 being that value in the array
+// returns 1, which is the index
+myArray[1] // will return 'two' because its at the index of 1
+```
+
+This will result in a number, example `0` or `4`. This will work if the array has simple primative values.
+
+
+#### myList.findIndex
+Most of the time, our arrays have obects, or collections of values grouped together as objects. In this case, `indexOf` will not work. We need to say what parameter we are looking for on the object. Example:
+```js
+const users = [
+    {
+        id: 1234,
+        name: 'Jill'
+    },
+    {
+        id: 1235,
+        name: 'Jessica'
+    }
+]
+
+```
+If we wanted to find a user with a specific id, we would have to let the `findIndex` function know we want to search each object based on their id. This requires us to do something we have not seen yet, which is supply `findIndex` with a function"
 ```js
 
-const myArray = [
-    {name: 'one'},
-    {name: 'two'},
-    {name: 'three'},
-    {name: 'four'}
+const users = [
+    {
+        id: 1234,
+        name: 'Jill'
+    },
+    {
+        id: 1235,
+        name: 'Jessica'
+    },
+    {
+        id: 1236,
+        name: 'Julie'
+    }
 ]
 
 const result = myArray.findIndex(function(x) {
-    return x.name === 'two'
+    return x.id === 1235'
 }) // will return 1
 
 // arrow function alternative
 const result = myArray.findIndex(x => x.name === 'two') // will return 1
 ```
 
-
-    
-- find
-Find is unique in that it takes a function. Lets spend some time talking through how this works...
+#### myList.find
+Rather than get the index, of we just want to find an item in an array and get it, we can instead use the `find` array method:
 ```js
-const found = [1,2,3,4].find(x => {
+const list = [1,2,3,4]
+
+const found = list.find(x => {
     return x === 3
 })
 
-const user = [
+const users = [
     {
-        id: 1,
-        name: 'John'
+        id: 1234,
+        name: 'Jill'
     },
     {
-        id: 2,
-        name: 'James'
+        id: 1235,
+        name: 'Jessica'
     },
     {
-        id: 3,
-        name: 'Jane'
+        id: 1236,
+        name: 'Julie'
     }
-].find(x => {
-    return x.id === 2
+]
+
+const userIAmLookingFor = users.find(x => {
+    return x.id === 1235
 })
 
 ```
@@ -228,21 +272,7 @@ const result2 = purchases[1] // this will be the second item
 const result3 = purchases[2] // this will be the third item
 ```
 
-#### Good example of practical use for Array methods
-```js
-let todoList = [];
-function remember(task) {
-  todoList.push(task);
-}
-function getTask() {
-  return todoList.shift();
-}
-function rememberUrgently(task) {
-  todoList.unshift(task);
-}
-```
-
-#### Spreading an Array
+## Spreading an Array
 
 ```js
 // if i have 2 lists, i an create a combined list with the spread operator:
@@ -263,26 +293,7 @@ const newestList = [
 ```
 
 
-#### Object Methods
-- Object.keys
-```js
-const obj = {
-    name: 'John',
-    job: 'developer
-}
-
-Object.keys(obj) // will return an array of all the keys
-
-
-```
-#### Desctructuring
-
-```js
-const personFromDatabase = {name: "Faraji", age: 23}
-const {name} = personFromDatabase
-```
-
-#### Examples of how we can take data from an object with forEach and add up a total
+## The ForEach array method, an alternative to the loop
 add up the total of something
 ```js
 const purchases = [
@@ -305,11 +316,6 @@ purchases.forEach(function(item){
     total = total + item.spent
 })
 
-// arrow function alternative
-let total = 0
-purchases.forEach(item => {
-    total = total + item.spent
-})
 
 ```
 
@@ -349,21 +355,22 @@ function makeTodoItem(nameOfTodo) {
     }
 }
 
-// arrow function alternative
-const makeTodoItem = nameOfTodo => {
-    return {
-        name: nameOfTodo,
-        done: false
-    }
-}
-
 ```
 
 ## Netflix Developers course on array methods
 [Course Link](https://egghead.io/lessons/rxjs-the-array-foreach-method)
 
-## Chapter Exercises
 
+
+## Some helpful notes before the exercises
+- There are some functions made available to us in the Brwoser environement such as:
+    - Date
+    - Math
+- functions such as `Math.random` and `Math.floor` might be helpful for generating random numbers
+- finding the length of an array can easily be determined by accessing this property: `myList.length`.
+
+
+## Chapter Exercises
 - make a function called 'generateId'. It should take no arguments and return a string. Hint: Math.random might be helpful here. Click [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for MDN's docs on Math.random
 
 ```js

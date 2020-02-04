@@ -142,12 +142,6 @@ const hero = document.getElementsByClassName('hero')[0]
 hero.innerHTML = 'hero text'
 hero.textContent = 'hero text 2'
 
-// set text on array of p's using querySelectorAll
-const paragraphs = document.querySelectorAll('.section p')
-paragraphs.forEach(x => {
-    x.textContent = 'new text'
-})
-
 // get 1 thing with query selector
 const queriedHeader = document.querySelector('#header')
 queriedHeader.textContent = '!!!'

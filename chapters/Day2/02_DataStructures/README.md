@@ -377,7 +377,7 @@ function generatedId() {
 ```js
 function chooseRandomTeam(teams) {
     // should tak an array of strings like ['red team', 'blue team', 'yellow team']
-    // and return 1 team randomly. Math.random might help with this as well
+    // and return 1 team randomly. Math.random and teams.length might help
 }
 
 ```

@@ -180,7 +180,7 @@ This will result in a number, example `0` or `4`. This will work if the array ha
 
 
 #### myList.findIndex
-Most of the time, our arrays have obects, or collections of values grouped together as objects. In this case, `indexOf` will not work. We need to say what parameter we are looking for on the object. Example:
+Most of the time, our arrays have objects, or collections of values grouped together as objects. In this case, `indexOf` will not work. We need to say what parameter we are looking for on the object. Example:
 ```js
 const users = [
     {

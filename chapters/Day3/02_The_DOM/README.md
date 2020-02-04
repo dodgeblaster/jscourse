@@ -58,43 +58,18 @@ const firstHobby = document.querySelector('ul li.hobby')
 const againAlsoHobbies = document.querySelectorAll('ul li.hobby')
 ```
 
-## Getting sizes of things
-Get the size of an element
-```js
-const x = document.getElementById('element-id')
-const height = x.offsetHeight
-const width = x.offsetWidth
-```
-
-Get space inside an element (good for divs)
-```js
-const x = document.getElementById('element-id')
-const height = x.clientHeight
-const width = x.clientWidth
-```
-
-Get lots of position data on an element:
-- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
-```js
-const x = document.getElementById('element-id')
-const lostOfPositionData = x.getBoundingClientRect()
-```
-
-Get the Page vertical scroll position with pageYOffset
-```js
-const verticalPosition = window.pageYOffset
-```
-Get the Page horizontal scroll position with pageYOffset
-```js
-const horizontalPosition = window.pageYOffset
-```
-
 ## Dealing with the annoying fact that query selector does not return a real array
 ```js
 const divs = document.querySelectorAll('div') // currently a NodeList
 const divsInProperArray = Array.from(divs)
 ```
 
+## 2 ways to update text
+```js
+item.innerText = 'Hello'
+item.textContent = 'Hello'
+```
+- [MDN Docs on Difference between the 2](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_from_innerText)
 
 ## 2 ways to add things to the DOM
 - innerHTML (easy way to add lots of html all at once)

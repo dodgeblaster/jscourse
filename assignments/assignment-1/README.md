@@ -29,8 +29,10 @@ const item = {
 
 I will be asking the following questions
 
--   Do the tiles match the data in the javascript file
+-   Do the generated tiles match the data in the javascript file
 -   Did your solution use a loop?
 -   Did you use variables
+-   Does the finished look like the mock
+-   Are the tiles responsive
 
 

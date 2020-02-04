@@ -197,13 +197,6 @@ referenceToNewElement.remove()
 
 ```
 
-
-# Exercise
-- do the mountain exercise
-- do the getElementsByTagName exercise
-- ** DO NOT do the cat animation exercise **
-
-
 ## Helpful Example
 
 ```js
@@ -260,7 +253,7 @@ document.body.appendChild(generatedTable)
 
 ```
 
-## Exercise Answer
+## Eloquent JS Chapter 5 Exercise Answer
 HTML
 ```html
 <!DOCTYPE html>
@@ -360,5 +353,5 @@ const app = document.querySelector('#app')
 app.appendChild(table)
 ```
 
-## Netlfix demo starter files
-- [Starter files](https://htmlbasicsresources.s3.amazonaws.com/netflix-demo.zip)
+## Exercise starter files
+- [Starter files](https://htmlbasicsresources.s3.amazonaws.com/twitter-start.zip)

@@ -168,7 +168,7 @@ There are 3 ways to find an item in an array
 - `myList.find`
 
 #### myList.indexOf
-indexOf will try to find the index of the string or number you give as a parameter"
+indexOf will try to find the index of the string or number you give as a parameter
 ```js
 const myArray = ['one','two','three','four']
 myArray.indexOf('two') // 2 being that value in the array
@@ -194,7 +194,7 @@ const users = [
 ]
 
 ```
-If we wanted to find a user with a specific id, we would have to let the `findIndex` function know we want to search each object based on their id. This requires us to do something we have not seen yet, which is supply `findIndex` with a function"
+If we wanted to find a user with a specific id, we would have to let the `findIndex` function know we want to search each object based on their id. This requires us to do something we have not seen yet, which is supply `findIndex` with a function
 ```js
 
 const users = [
@@ -221,7 +221,7 @@ const result = myArray.findIndex(x => x.name === 'two') // will return 1
 ```
 
 #### myList.find
-Rather than get the index, of we just want to find an item in an array and get it, we can instead use the `find` array method:
+Rather than get the index, if we just want to find an item in an array and get it, we can instead use the `find` array method:
 ```js
 const list = [1,2,3,4]
 
@@ -249,6 +249,7 @@ const userIAmLookingFor = users.find(x => {
 })
 
 ```
+This will result in being given the target object rather than just the index.
 
 #### Referencing a single item in an array
 ```js
@@ -383,7 +384,7 @@ function generatedId() {
 - make a function called 'chooseRandomTeam'. It should take an array of strings and return a string.
 ```js
 function chooseRandomTeam(teams) {
-    // should tak an array of strings like ['red team', 'blue team', 'yellow team']
+    // should take an array of strings like ['red team', 'blue team', 'yellow team']
     // and return 1 team randomly. Math.random and teams.length might help
 }
 

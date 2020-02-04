@@ -137,7 +137,7 @@ const john = {
     email: false
 }
 
-function updateCountry(student, name) {
+function updateCountry(student, country) {
     // do something
 }
 
@@ -145,7 +145,7 @@ const updatedStudent = updateCountry(john, 'CDN')
 console.log(updatedStudent)
 ```
 
-- Make a function that taks a studentObject, and an email, and returns a student with an updated email
+- Make a function that takes a studentObject, and an email, and returns a student with an updated email
 ```js
 const john = {
     name: 'John',
@@ -153,7 +153,7 @@ const john = {
     email: false
 }
 
-function updateEmail(student, name) {
+function updateEmail(student, email) {
     // do something
 }
 

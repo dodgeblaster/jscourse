@@ -36,7 +36,7 @@ If you would rather have a hard copy, you can buy one, but the online version ha
 ### Assigments
 | Name | Percent of Grade | Details | Due Date|
 | --- | --- | --- | --- |
-| Assignment #1 | 20% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-1) |  Oct 16 (Wed) @ 5:00pm|
-| Assignment #2 | 20% | [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-2) |  Oct 16 (Wed) @ 5:00pm|
-| Assignment #3 | 40% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-3) | Oct 21 (Mon) @ 5:00pm | 
+| Assignment #1 | 20% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-1) |  Feb 10 (Wed) @ 5:00pm|
+| Assignment #2 | 20% | [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-2) |  Feb 10 (Wed) @ 5:00pm|
+| Assignment #3 | 40% |  [Details](https://github.com/dodgeblaster/jscourse/tree/master/assignments/assignment-3) | Feb 14 (Mon) @ 5:00pm | 
 | Attendance | 20% | Self explanitory ||

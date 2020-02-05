@@ -90,3 +90,10 @@ In this exercise we want to get the following DOM elements and put them in varia
 When we click the launch button we want to set the css class name of the switch to: `switch success`.
 When we click the stop button we want to set the css class name of the switch to: `switch canceled`.
 
+
+
+
+### Good Resources
+- [List of events to use](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [addEventListener MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [removeEventListener MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)

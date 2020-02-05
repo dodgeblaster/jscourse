@@ -4,16 +4,15 @@
 
 
 ## Quick Discussion on Javascript Linters
-The professional thing to do is not to depend on your memory, but instead depend on tools that will remember best practices for you. There are 2 popular kinds of tools that developers depend on: Linters (to insure your code is following agreed upon best practices), and testers (to validate your code does what you say it will do (not covered in this course)).
+The professional thing to do is not to depend on your memory, but instead depend on tools that will remember best practices for you. There are 2 popular kinds of tools that developers depend on: Linters (to insure your code is following agreed upon best practices), and test runners (to validate your code does what you say it will do).
 
 The most popular Javascript Linters are:
 - [ESLint](https://eslint.org/)
-- [Prettier]()
+- [Prettier](https://prettier.io)
 
-Both are very good. You can define what rules you want your linter to automatically remember for in 2 ways:
-- set it in VSCode preferences
-- define them per project in a configuration file (you can find prettier documentation for config [here](https://prettier.io/docs/en/configuration.html).
-
+Both are very good. You can define what rules you want your linter to enforce in 2 ways:
+- set your default configuration in VSCode preferences
+- define your configuration per project in a configuration file (you can find prettier documentation for config [here](https://prettier.io/docs/en/configuration.html).
 
 
 ## Click Event

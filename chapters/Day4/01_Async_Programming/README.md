@@ -1,5 +1,16 @@
 # Async Programming
 
+
+### Reading
+
+- [MDN Intro](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+- [MDN General Async Concepts](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts)
+- [MDN Intro to JS Async](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
+- [MDN Timeouts and Intervals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
+- [MDN Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+
+### Intro
+
 There are 3 ways in which you can do asyn programming in Javascript:
 - callbacks
 - promises

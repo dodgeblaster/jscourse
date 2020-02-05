@@ -19,11 +19,11 @@ If you want to read more about Prettier's motivation, click [here](https://prett
 - Demonstrate with 01_prettier
 
 #### ESLint resources
-- [Awesome ESLint](https://github.com/dustinspecker/awesome-eslint)
+- [Lots of ESLint Resources](https://github.com/dustinspecker/awesome-eslint)
 - [Standard Style](https://github.com/standard/eslint-config-standard)
 - [Google's Style](https://github.com/google/eslint-config-google)
 - [Facebook's Style](https://www.npmjs.com/package/eslint-config-fbjs)
-- [AirBnb's Style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+- [Airbnb's Style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 
 ## Click Event
 ```js

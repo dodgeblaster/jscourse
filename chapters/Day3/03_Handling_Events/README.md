@@ -1,7 +1,20 @@
 # Handling Events
 
+- [Download Starter Files Here](https://htmlbasicsresources.s3.amazonaws.com/eventsAndAnimation.zip)
 
-- [Starter Files](https://htmlbasicsresources.s3.amazonaws.com/eventsAndAnimation.zip)
+
+## Quick Discussion on Javascript Linters
+The professional thing to do is not to depend on your memory, but instead depend on tools that will remember best practices for you. There are 2 popular kinds of tools that developers depend on: Linters (to insure your code is following agreed upon best practices), and testers (to validate your code does what you say it will do (not covered in this course)).
+
+The most popular Javascript Linters are:
+- [ESLint](https://eslint.org/)
+- [Prettier]()
+
+Both are very good. You can define what rules you want your linter to automatically remember for in 2 ways:
+- set it in VSCode preferences
+- define them per project in a configuration file (you can find prettier documentation for config [here](https://prettier.io/docs/en/configuration.html).
+
+
 
 ## Click Event
 ```js

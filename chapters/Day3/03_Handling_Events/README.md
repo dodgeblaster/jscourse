@@ -16,6 +16,7 @@ Both are very good. Prettier is less configurable, and does not cover as much. I
 
 If you want to read more about Prettier's motivation, click [here](https://prettier.io/docs/en/why-prettier.html)
 
+- Demonstrate with 01_prettier
 
 ## Click Event
 ```js

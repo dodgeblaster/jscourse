@@ -10,9 +10,11 @@ The most popular Javascript Linters are:
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io)
 
-Both are very good. You can define what rules you want your linter to enforce in 2 ways:
+Both are very good. Prettier is less configurable, and does not cover as much. If you want to define things such as `dont use var`, then ESLint is a great option. You can define what rules you want your linter to enforce in 2 ways:
 - set your default configuration in VSCode preferences
 - define your configuration per project in a configuration file (you can find prettier documentation for config [here](https://prettier.io/docs/en/configuration.html).
+
+If you want to read more about Prettier's motivation, click [here](https://prettier.io/docs/en/why-prettier.html)
 
 
 ## Click Event

@@ -28,24 +28,30 @@ button.addEventListener('click', function(event) {
 ## Scroll Event Example
 ```html
 <style>
-  #progress {
-    border-bottom: 2px solid blue;
-    width: 0;
-    position: fixed;
-    top: 0; left: 0;
-  }
+    #progress {
+        border-bottom: 2px solid blue;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 </style>
 <div id="progress"></div>
 <script>
-  // Create some content
-  document.body.appendChild(document.createTextNode(
-    "supercalifragilisticexpialidocious ".repeat(1000)));
+    // Create some content
+    const veryLongString = "supercalifragilisticexpialidocious ".repeat(1000)
+    const lotsOfHtmlText = document.createTextNode(veryLongString)
+    document.body.appendChild(lotsOfHtmlText)
 
-  let bar = document.querySelector("#progress");
-  window.addEventListener("scroll", () => {
-    let max = document.body.scrollHeight - innerHeight;
-    bar.style.width = `${(pageYOffset / max) * 100}%`;
-  });
+    const bar = document.querySelector("#progress")
+    window.addEventListener("scroll", function()  {
+        // 1. get maximum scroll value
+        const max = document.body.scrollHeight - innerHeight
+        // 2. get the current scroll position
+        const currentPosition = window.pageYOffset
+        // 3. set the status bar width
+        bar.style.width = `${(currentPosition / max) * 100}%`
+    })
 </script>
 ```
 - Demonstrate with 03_scrollEventExample project

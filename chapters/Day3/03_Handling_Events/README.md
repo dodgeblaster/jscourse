@@ -1,5 +1,8 @@
 # Handling Events
 
+
+- [Starter Files](https://htmlbasicsresources.s3.amazonaws.com/eventsAndAnimation.zip)
+
 ## Click Event
 ```js
 const button = document.querySelector('#button')

@@ -3,7 +3,7 @@
 Here are the requirements:
 - Project must get data from an API
 - Project must show data from api on the page
-- Project must include a click event
+- Project must include an event (click, key, setInterval, setTimeout)
 
 ### The Purpose of this assignment
 Along with confirming you know how to do the list of requirements above,
@@ -14,6 +14,8 @@ are available as choices:
 ### Places to get data
 - [Starwars API](https://swapi.co/)
 - [Pokedex API](https://pokeapi.co/)
+- [Mock API](https://jsonplaceholder.typicode.com/)
+- [Calgary API](https://data.calgary.ca/browse)
 
 
 ### Here are some ideas:
@@ -28,6 +30,13 @@ are available as choices:
     - Have categories which when clicked, sort the pokemon by that category.
     - When clicking on any of the pokemon on the main page, you are taken to a second page, where you are given details on that individual pokemon. 
     - Here is an example of how that might work: [Pokedex](https://www.pokemon.com/us/pokedex/)
+
+- News Story Site
+    - Using the Mock API, list all of the posts
+    - When clicking on a post, you are taken to a 2nd page, which shows the post with all the related comments
+    
+- Visualize Calgary Data
+    - Using the Calgary API, take 2 data sets and visualize them in a graph, comparing them and showing trends
 
 ### Advice
 We always under estimate how long something will take. Its important to determine 2 things while planning your project:

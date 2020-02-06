@@ -9,6 +9,10 @@
 - [MDN Timeouts and Intervals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
 - [MDN Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
+### Notes
+- [MDN Docs on HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+
 ### Intro
 
 There are 3 ways in which you can do asyn programming in Javascript:

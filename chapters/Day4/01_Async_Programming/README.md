@@ -14,6 +14,9 @@
 - [JSON Placeholder](https://jsonplaceholder.typicode.com/)
 
 
+### Starter Files
+- [Download starter files here](https://htmlbasicsresources.s3.amazonaws.com/js-day06.zip)
+
 ### API Endpoints
 ```
 Example of endpoint that works

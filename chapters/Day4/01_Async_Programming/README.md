@@ -9,8 +9,9 @@
 - [MDN Timeouts and Intervals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
 - [MDN Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
-### Notes
+### Helpful Links
 - [MDN Docs on HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- [JSON Placeholder](https://jsonplaceholder.typicode.com/)
 
 
 ### Intro

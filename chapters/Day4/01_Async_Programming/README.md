@@ -52,6 +52,36 @@ This is how we have been programming so far. Every step in our code happens one 
 ### SetInterval Exercises
 - Open 03_intervalExercises
 
+
+Answer
+```js
+const startButton = document.querySelector("#js-start")
+const stopButton = document.querySelector("#js-stop")
+const counter = document.querySelector("#js-counter")
+
+let count = 0
+let stopwatch = null
+let running = false
+
+// hook things up
+startButton.addEventListener('click', function() {
+    if (running) {
+        return
+    }
+
+    running = true
+    stopwatch = setInterval(function(){
+        count++
+        counter.textContent = count
+    }, 1000)
+})
+
+stopButton.addEventListener('click', function() {
+    running = false
+    clearInterval(stopwatch)
+})
+```
+
 ## What is async programming?
 Sync programming is like a Subway, Async programming is like a starbucks. Here is how buying something at Starbucks works:
 - Go to the cash register

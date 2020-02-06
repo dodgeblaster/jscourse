@@ -14,6 +14,19 @@
 - [JSON Placeholder](https://jsonplaceholder.typicode.com/)
 
 
+### API Endpoints
+```
+Example of endpoint that works
+https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/works
+
+Example of endpoint that works 70% of the time
+https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/sometimesworks
+
+Example of endpoint that does not work
+https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/neverworks
+```
+
+
 ### Intro
 
 There are 3 ways in which you can do asyn programming in Javascript:
@@ -21,11 +34,23 @@ There are 3 ways in which you can do asyn programming in Javascript:
 - promises
 - async / await
 
-We are going to focus only on promises. Once you are familiar with how async programming works in general using promises,
-I encourage you to look into the other 2 methods.
+We are going to focus on callbacks and promises.
+
+
+### What is Syncronous programming?
+This is how we have been programming so far. Every step in our code happens one after the other. Lets look at an example of when this might be a problem.
+- Open 01_blocking project example
+
+
+### How do we execute functions after the initial execution, how do we call functions later?
+- Open 02_doingThingsLater
+
+
+### SetInterval Exercises
+- Open 03_intervalExercises
 
 ## What is async programming?
-Async programming is like a starbucks. Here is how buying something at Starbucks works:
+Sync programming is like a Subway, Async programming is like a starbucks. Here is how buying something at Starbucks works:
 - Go to the cash register
 - Tell them my order
 - A barista hears my order and starts working on my drink
@@ -38,6 +63,17 @@ is making the drink while thats happening.
 In Javacript, we have our main script, which is like the person at the cash register. Thats the main task. But
 in our script we may ask for some data from a server, that is like asking a barista to make a drink. Its a second task
 that needs to be done while the first task is running.
+
+- Open 04_callbacks to demonstrate
+
+
+## How can we get data from a server?
+- download [Postman](https://www.postman.com/)
+- demonstrate hitting endpoints with postman
+- discuss HTTP codes
+- discuss the unreliability of networks
+
+
 
 ## Making a promise in Javascript
 There is a built in function in the browser called fetch. Fetch takes the format of a promise. In order to understand fetch, we first need to understand promises, how they work, and how to build them.

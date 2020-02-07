@@ -85,7 +85,7 @@ the server is being responsible and is not accepting anything that is missing ne
 Why doesnt 400 and 500 errors automatically go to the catch function?
 - [MDN Answer](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Checking_that_the_fetch_was_successful)
 ```js
-const getUrl = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/comment'
+const url = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/comment'
 
 const apiData = {
     method: 'POST',
@@ -95,7 +95,7 @@ const apiData = {
     })
 }
 
-fetch(getUrl, apiData)
+fetch(url, apiData)
     .then(x => x.json())
     .then(x => {
         if (x.error) {

@@ -256,7 +256,44 @@ Diameter: Number
 ```
 
 
-# 2. What to do when something in your request goes wrong
+# 2. What to do while you are waiting for the data to come back from the server
+You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.
+
+## Exercise #2
+Instead of having a blank screen, we will write to the page right away with a loading message (alternatively, we could just literally write loading in the html file without any javascript as an initial state).
+Once the api call comes back successfully or with an error, update the display using the `updateDisplay` helper function
+
+```js
+function writeToPage(text) {
+  const el = document.createElement('div')
+  el.id = 'display'
+  el.style = `
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+  `
+  el.textContent = text
+  document.body.appendChild(el)
+}
+
+function updateDisplay (text) {
+  const el = document.querySelector('#display')  
+  el.textContent = text
+}
+
+const url = 'https://swapi.co/api/people/1'
+
+fetch(url).then(x => {
+  return x.json()
+})
+
+```
+
+
+# 3. What to do when something in your request goes wrong
 
 - [MDN documetation on status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
@@ -294,7 +331,7 @@ fetch(url).then(x => {
 })
 ```
 
-## Exercise 2
+## Exercise 3
 Using the code below, do the following:
 - using the valid url to make a successful request, and using the helper function `writeToPage` to display some data on the page
 - using the invalidUrl, handle the error and display a message on the page using `writeToPage` letting the user know there was
@@ -323,43 +360,7 @@ fetch(url).then(x => {
 ```
 
 
-# What to do while you are waiting for the data to come back from the server
-You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.
 
-## Exercise #3
-Instead of having a blank screen, we will write to the page right away with a loading message (alternatively, we could just literally write loading in the html file without any javascript as an initial state).
-Once the api call comes back successfully or with an error, update the display using the `updateDisplay` helper function
-
-```js
-function writeToPage(text) {
-  const el = document.createElement('div')
-  el.id = 'display'
-  el.style = `
-    padding: 20px 40px;
-    border-radius: 5px;
-    background: #222;
-    color: white;
-    font-family: sans-serif;
-    display: inline-block;
-  `
-  el.textContent = text
-  document.body.appendChild(el)
-}
-
-function updateDisplay (text) {
-  const el = document.querySelector('#display')  
-  el.textContent = text
-}
-
-const url = 'https://swapi.co/api/people/1'
-
-writeToPage('Loading...')
-
-fetch(url).then(x => {
-  return x.json()
-})
-
-```
 
 # Final Exercise for Async Programming
 Using the Pokemon API, get a list of pokemon and display them on a page. Do this by:

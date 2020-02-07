@@ -300,7 +300,21 @@ fetch(url)
 
 ## Answer
 ```js
-
+function writeToPage(text) {
+    const el = document.createElement('div')
+    el.id = 'display'
+    el.style = `
+      padding: 20px 40px;
+      border-radius: 5px;
+      background: #222;
+      color: white;
+      font-family: sans-serif;
+      display: inline-block;
+    `
+    el.textContent = text
+    document.body.appendChild(el)
+}
+  
 function addLoading() {
     const el = document.createElement('p')
     el.id = 'loading'
@@ -313,6 +327,7 @@ function removeLoading() {
     el.remove()
 }
 
+const url = 'https://swapi.co/api/people/1'
 addLoading()
 fetch(url)
     .then(x => x.json())

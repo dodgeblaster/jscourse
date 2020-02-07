@@ -148,14 +148,17 @@ HTML
 ```
 JS
 ```js
-function sendComment(comment) {
-    const getUrl = 'https://now-server.orangeman.now.sh/api/form1'
+const name = document.querySelector('#name')
+const submitButton = document.querySelector('#submit')
+
+function sendComment(name) {
+    const getUrl = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/comment'
     return fetch(getUrl, {
         method: 'POST',
         body: JSON.stringify({
-            name: 'john',
+            name: name,
             email: 'john@example.com',
-            comment: comment
+            comment: 'comment...'
         })
     })
     .then(x => x.json())
@@ -172,10 +175,7 @@ function sendComment(comment) {
     })
 }
 
-const name = document.querySelector('#name')
-const sub = document.querySelector('#submit')
-
-sub.addEventListener('click', x => {
+submitButton.addEventListener('click', x => {
     x.preventDefault() // we must prevent default, so we dont try to either reload this page or go to a different page
     sendComment(name.value)
 })
@@ -186,7 +186,7 @@ sub.addEventListener('click', x => {
 - Add submitting text into the `form-status` div while the post is being submitted so users know something is happening, remove it once the post is done.
 
 ## Validation
-When someone has filled out input fields to submit to a server, where should we validate it, ont eh frontend or on the server? The answer is both, and you do it for different reasons.
+When someone has filled out input fields to submit to a server, where should we validate it, on the frontend or on the server? The answer is both, and you do it for different reasons.
 You validate on your server for security reasons. As long as your server validates input, you are safe. So why also validate on the front end? For a good user experience. You want to give your user feedback as soon as possible.
 
 Here is an example form for filling out a blog post:

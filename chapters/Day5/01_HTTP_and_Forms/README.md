@@ -223,8 +223,13 @@ HTML
 
 JS
 ```js
+const title = document.querySelector('#title')
+const author = document.querySelector('#author')
+const body = document.querySelector('#body')
+const sub = document.querySelector('#submit')
+
 const saveBlogPost = (blog) => {
-    const getUrl = 'https://now-server.orangeman.now.sh/api/blog'
+    const getUrl = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/blog'
     return fetch(getUrl, {
         method: 'POST',
         body: JSON.stringify({
@@ -246,11 +251,6 @@ const saveBlogPost = (blog) => {
         console.log(err)
     })
 }
-
-const title = document.querySelector('#title')
-const author = document.querySelector('#author')
-const body = document.querySelector('#body')
-const sub = document.querySelector('#submit')
 
 sub.addEventListener('click', x => {
     x.preventDefault()

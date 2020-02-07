@@ -286,10 +286,11 @@ function updateDisplay (text) {
 
 const url = 'https://swapi.co/api/people/1'
 
-fetch(url).then(x => {
-  return x.json()
-})
-
+fetch(url)
+    .then(x => x.json())
+    .then(data => {
+	// handle fetched data here    
+    })
 ```
 
 
@@ -311,24 +312,25 @@ Because there are so many things that could go wrong, most of which is out of ou
 ```js
 const url = 'https://swapi.co/api/PURPOSELY-WRONG-REQUEST'
 
-fetch(url).then(x => {
-  return x.json()
-}).then(x => {
-  console.log('success!')
-})
+fetch(url)
+    .then(x => x.json())
+    .then(x => {
+        console.log('success!')
+    })
 ```
 
 Now, lets add a catch on the end, to be explicit as to what we will do when things go wrong:
 ```js
 const url = 'https://swapi.co/api/PURPOSELY-WRONG-REQUEST'
 
-fetch(url).then(x => {
-  return x.json()
-}).then(x => {
-  console.log('success!')
-}).catch(err => {
-  console.log('I am sorry, the starwars data is not available right now :(')
-})
+fetch(url)
+    .then(x => x.json())
+    .then(x => {
+        console.log('success!')
+    })
+    .catch(err => {
+        console.log('I am sorry, the starwars data is not available right now :(')
+    })
 ```
 
 ## Exercise 3
@@ -354,13 +356,12 @@ function writeToPage(text) {
 const url = 'https://swapi.co/api/people/1'
 const invalidUrl = 'https://swapi.co/api/NOT-VALID'
 
-fetch(url).then(x => {
-  return x.json()
-})
+fetch(url)
+    .then(x => x.json())
+    .then(data => {
+    	// code goes here
+    })
 ```
-
-
-
 
 # Final Exercise for Async Programming
 Using the Pokemon API, get a list of pokemon and display them on a page. Do this by:

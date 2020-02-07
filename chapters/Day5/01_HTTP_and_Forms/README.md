@@ -40,7 +40,18 @@ const dogConvertedIntoJSON = JSON.stringify(dog)
 
 const dogTurnedBackIntoObject = JSON.parse(dogConvertedIntoJSON)
 ```
+## HTTP Methods
+- [MDN Docs on HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
+There are many ways to hit a single endpoint. When we visit a site in a browser we are making a 'GET' request. We can also make other kinds of requests on the same endpoint:
+```js
+GET     - get something
+POST    - create something
+PUT     - update something
+DELETE  - remove something
+```
+
+Like HTTP codes, these are conventions that are a good idea to follow, but it is possible for the creators of a server to completely ignore these rules if they wanted to. 
 
 ## Posting with Fetch
 HTTP Forms traditionally work by submitting form results to a different page on the surver. This means the page either reloads
@@ -50,7 +61,7 @@ or anything that requires the user to stay on the same page, we need to submit f
 For this, we send data behind in the scenes in our javascript using fetch.
 
 ```js
-const url = 'https://now-server.orangeman.now.sh/api/form1'
+const url = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/comment'
 
 const apiData = {
     method: 'POST',
@@ -71,8 +82,10 @@ fetch(url, apiData)
 Notice how we get a 400 status code returned to us if name or comment is not included in the body. This means
 the server is being responsible and is not accepting anything that is missing neccessary data.
 
+Why doesnt 400 and 500 errors automatically go to the catch function?
+- [MDN Answer](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Checking_that_the_fetch_was_successful)
 ```js
-const getUrl = 'https://now-server.orangeman.now.sh/api/form1'
+const getUrl = 'https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/comment'
 
 const apiData = {
     method: 'POST',
@@ -88,7 +101,6 @@ fetch(getUrl, apiData)
         if (x.error) {
             throw x.error
         }
-         
         console.log(x)
     })
     .catch(err => {
@@ -101,7 +113,7 @@ fetch(getUrl, apiData)
 ## Exercise #1
 Make a similar POST call with the `fetch` function as is done in the example above, but instead target the following endpoint:
 ```bash
-https://now-server.orangeman.now.sh/api/tweet
+https://00tuquls16.execute-api.us-east-1.amazonaws.com/dev/tweet
 ```
 Posting to this endpoint requires that your data looks like this:
 ```js

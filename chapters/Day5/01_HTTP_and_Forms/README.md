@@ -127,6 +127,7 @@ const data = {
 On success, console.log the result
 
 ## Using Inputs to fill out data and send to a server
+
 HTML
 ```html
 <!DOCTYPE html>
@@ -188,6 +189,10 @@ submitButton.addEventListener('click', x => {
 ## Validation
 When someone has filled out input fields to submit to a server, where should we validate it, on the frontend or on the server? The answer is both, and you do it for different reasons.
 You validate on your server for security reasons. As long as your server validates input, you are safe. So why also validate on the front end? For a good user experience. You want to give your user feedback as soon as possible.
+
+#### Sidenote:
+- [Input CSS Inspiration](https://tympanus.net/Development/TextInputEffects/)
+- [Status Notification Inspiration](https://tympanus.net/Development/NotificationStyles/)
 
 Here is an example form for filling out a blog post:
 

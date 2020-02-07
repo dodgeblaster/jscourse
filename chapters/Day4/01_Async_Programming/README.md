@@ -169,7 +169,7 @@ makeExpensiveDrink()
   })
 ```
 
-## window.fetch
+# 1. Making a fetch call
 The fetch function is a promise, meaning if you execute this function, the only way to get the result of it is
 by attaching a `then` to it. Here is an example:
 

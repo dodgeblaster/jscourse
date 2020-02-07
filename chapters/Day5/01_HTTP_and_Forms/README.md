@@ -193,7 +193,8 @@ You validate on your server for security reasons. As long as your server validat
 #### Sidenote:
 - [Input CSS Inspiration](https://tympanus.net/Development/TextInputEffects/)
 - [Status Notification Inspiration](https://tympanus.net/Development/NotificationStyles/)
-
+- [Minimalistic Form Inpsiration](https://tympanus.net/Development/MinimalForm/)
+- [Fullscreen Form Inspiration](https://tympanus.net/Development/FullscreenForm/)
 Here is an example form for filling out a blog post:
 
 HTML

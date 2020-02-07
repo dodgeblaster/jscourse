@@ -298,6 +298,31 @@ fetch(url)
 ```
 
 
+## Answer
+```js
+
+function addLoading() {
+    const el = document.createElement('p')
+    el.id = 'loading'
+    el.textContent = 'Loading'
+    document.body.appendChild(el)
+}
+
+function removeLoading() {
+    const el = document.querySelector('#loading')
+    el.remove()
+}
+
+addLoading()
+fetch(url)
+    .then(x => x.json())
+    .then(data => {
+        removeLoading()  
+        writeToPage(data.height)
+        // handle fetched data here    
+    })
+
+```
 # 3. What to do when something in your request goes wrong
 
 - [MDN documetation on status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

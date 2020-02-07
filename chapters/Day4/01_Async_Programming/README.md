@@ -260,8 +260,17 @@ Diameter: Number
 You will notice from that last exercise that the screen is blank until the api call has completed. This is not great from a UX perspective. It is important to let the user know what is going on. That is why its common to have an initial state of 'loading'.
 
 ## Exercise #2
-Instead of having a blank screen, we will write to the page right away with a loading message (alternatively, we could just literally write loading in the html file without any javascript as an initial state).
-Once the api call comes back successfully or with an error, update the display using the `updateDisplay` helper function
+Instead of having a blank screen, we will write to the page right away with a loading message.
+
+Step 1:
+Make 'showLoading' function, which will add a loading indicator to the page
+
+Step 2:
+Make 'removeLoading' function, which will remove the loading indicator from the page once the data has been successfully retreived.
+
+Step 3:
+Add `data.name` to the page with the `writeToPage` function
+
 
 ```js
 function writeToPage(text) {
@@ -279,13 +288,8 @@ function writeToPage(text) {
   document.body.appendChild(el)
 }
 
-function updateDisplay (text) {
-  const el = document.querySelector('#display')  
-  el.textContent = text
-}
 
 const url = 'https://swapi.co/api/people/1'
-
 fetch(url)
     .then(x => x.json())
     .then(data => {
@@ -334,33 +338,14 @@ fetch(url)
 ```
 
 ## Exercise 3
-Using the code below, do the following:
+Addint to the code in the previous exercise, do the following:
 - using the valid url to make a successful request, and using the helper function `writeToPage` to display some data on the page
 - using the invalidUrl, handle the error and display a message on the page using `writeToPage` letting the user know there was
 an issue getting the data.
 ```js
-function writeToPage(text) {
-  const el = document.createElement('div')
-  el.style = `
-    padding: 20px 40px;
-    border-radius: 5px;
-    background: #222;
-    color: white;
-    font-family: sans-serif;
-    display: inline-block;
-  `
-  el.textContent = text
-  document.body.appendChild(el)
-}
-
 const url = 'https://swapi.co/api/people/1'
 const invalidUrl = 'https://swapi.co/api/NOT-VALID'
 
-fetch(url)
-    .then(x => x.json())
-    .then(data => {
-    	// code goes here
-    })
 ```
 
 # Final Exercise for Async Programming
